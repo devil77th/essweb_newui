@@ -1,0 +1,46 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="WebApplication1.masterPage.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href='../css/bootstrap.min.css' rel='stylesheet'>
+    <script src="../js/jquery.min.js" type="text/javascript"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <title>SERA ESS Web</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+   
+</head>
+<body>
+<form id="form1" runat="server">
+<nav class='navbar navbar-default navbar-fixed-top navbar-dark bg-dark'>
+<a class='navbar-brand' href='#'>PT.Serasi Autoraya</a>
+ <div class="dropdown">
+     <asp:Button CssClass="btn btn-lg btn-primary btn-block" ID="cmdLogout" runat="server" Text="Log Out" OnClick="cmdLogout_Click"/>
+  <%--<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+    Menu
+  </button>--%>
+  
+ <%-- <div class="dropdown-menu">
+    <a class="dropdown-item" href="../page/login.aspx">Log Out</a>
+  </div>--%>
+</div> 
+
+<!–/.nav-collapse –>
+</nav>
+   <div class="container body-content">
+            <asp:ContentPlaceHolder ID="BodyContent" runat="server">
+            </asp:ContentPlaceHolder>
+            <hr />
+            <footer>
+                <p>&copy; <%: DateTime.Now.Year %> - CIST - PT.Serasi Autoraya</p>
+            </footer>
+    </div>
+</form>
+</body>
+</html>

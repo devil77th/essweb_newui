@@ -1,0 +1,2461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://sera18018/androidws/jsonservice.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/wcfjson" />
+  <xs:element name="dbrd_empfamily1">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nrp1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="dbrd_empfamily1Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/wcfjson" minOccurs="0" name="dbrd_empfamily1Result" nillable="true" type="q1:ArrayOfempFamily" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="dbrd_empeducation1">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nrp1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="dbrd_empeducation1Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/wcfjson" minOccurs="0" name="dbrd_empeducation1Result" nillable="true" type="q2:ArrayOfempEducation" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="dbrd_emptraining1">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nrp1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="dbrd_emptraining1Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/wcfjson" minOccurs="0" name="dbrd_emptraining1Result" nillable="true" type="q3:ArrayOfempTraining" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="dbrd_emppersonalid1">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nrp1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="dbrd_emppersonalid1Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/wcfjson" minOccurs="0" name="dbrd_emppersonalid1Result" nillable="true" type="q4:ArrayOfempPersonalID" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="dbrd_taxdata1">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nrp1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="dbrd_taxdata1Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/wcfjson" minOccurs="0" name="dbrd_taxdata1Result" nillable="true" type="q5:ArrayOfempTaxData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="dbrd_claimkm1">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nrp1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="dbrd_claimkm1Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/wcfjson" minOccurs="0" name="dbrd_claimkm1Result" nillable="true" type="q6:ArrayOflistClaim_Kacamata_Detail" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="dbrd_empwarning1">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nrp1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="dbrd_empwarning1Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/wcfjson" minOccurs="0" name="dbrd_empwarning1Result" nillable="true" type="q7:ArrayOfempWarning" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listapproval_ovt_hr">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nrpreq" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nrpapprover" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sdate" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="edate" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="status1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listapproval_ovt_hrResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/wcfjson" minOccurs="0" name="listapproval_ovt_hrResult" nillable="true" type="q8:ArrayOflistApproval_Overtime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEmpProfile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userid" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEmpProfileResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/wcfjson" minOccurs="0" name="GetEmpProfileResult" nillable="true" type="q9:ArrayOfempProfile" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEmpProfileHelpdesk">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userid" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEmpProfileHelpdeskResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/wcfjson" minOccurs="0" name="GetEmpProfileHelpdeskResult" nillable="true" type="q10:ArrayOfempProfileHelpdesk" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEmpProfile_XML">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userid" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEmpProfile_XMLResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/wcfjson" minOccurs="0" name="GetEmpProfile_XMLResult" nillable="true" type="q11:ArrayOfempProfile" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEmpProfileDP">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="emailadd" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEmpProfileDPResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetEmpProfileDPResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEmpProfileDP_XML">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="emailadd" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEmpProfileDP_XMLResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetEmpProfileDP_XMLResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEmpProfileDPSPOnline1">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userid1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pwd1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEmpProfileDPSPOnline1Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetEmpProfileDPSPOnline1Result" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserAuth">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserAuthResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetUserAuthResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserAuth64">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserAuth64Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetUserAuth64Result" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserAuth64Post">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserAuth64PostResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetUserAuth64PostResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListEmployee">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userid" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListEmployeeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/wcfjson" minOccurs="0" name="GetListEmployeeResult" nillable="true" type="q12:ArrayOflistEmployee" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDateFromServer">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDateFromServerResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetDateFromServerResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListTrxCICO">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userid" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListTrxCICOResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/wcfjson" minOccurs="0" name="GetListTrxCICOResult" nillable="true" type="q13:ArrayOflistCICOtrx" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SubCicoListApproval">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="refcode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="status" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="by" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SubCicoListApprovalResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SubCicoListApprovalResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="postOnleave">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="typeOL" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="datefrom" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dateto" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="num" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sisa" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="postOnleaveResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="postOnleaveResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListApproval">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userid" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListApprovalResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/wcfjson" minOccurs="0" name="GetListApprovalResult" nillable="true" type="q14:ArrayOflistApproval_absence" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListApprovalAttendance">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userid" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListApprovalAttendanceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/wcfjson" minOccurs="0" name="GetListApprovalAttendanceResult" nillable="true" type="q15:ArrayOflistApproval_attendance" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SubAbsListApproval">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="refcode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="status" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="by" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SubAbsListApprovalResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SubAbsListApprovalResult" type="xs:short" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetReportAbsensi">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nrp" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="monselect" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="yearselect" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetReportAbsensiResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetReportAbsensiWFH">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nrp" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="monselect" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="yearselect" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetReportAbsensiWFHResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cekOnleave">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nrp" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="datefrom" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dateto" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cekOnleaveResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/wcfjson" minOccurs="0" name="cekOnleaveResult" nillable="true" type="q16:ArrayOfcekOnleave" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cekAttendance">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nrp" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="datefrom" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dateto" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cekAttendanceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="cekAttendanceResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="subAttendance">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nrp" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dateattend" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="timefrom" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="timeto" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="attendcode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="subAttendanceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="subAttendanceResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cekCico">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nrp" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="datefrom" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="type" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cekCicoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="cekCicoResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cekCico_v2">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nrp" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="datefrom" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="type" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cekCico_v2Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="cekCico_v2Result" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="subCico">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nrp" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="datefrom" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="timefrom" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="type" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="reason" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="subCicoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="subCicoResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEmpProfile2">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nrp" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEmpProfile2Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/wcfjson" minOccurs="0" name="GetEmpProfile2Result" nillable="true" type="q17:ArrayOfempProfile2" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListTrxMed">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userid" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListTrxMedResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/wcfjson" minOccurs="0" name="GetListTrxMedResult" nillable="true" type="q18:ArrayOflistApproval_Medical" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListTrxMedPOST">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nrpreq1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="patientname1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pcode1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="psubcode1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListTrxMedPOSTResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/wcfjson" minOccurs="0" name="GetListTrxMedPOSTResult" nillable="true" type="q19:ArrayOflistApproval_Medical" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListTrxMedDetail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="refcodemed" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListTrxMedDetailResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/wcfjson" minOccurs="0" name="GetListTrxMedDetailResult" nillable="true" type="q20:ArrayOflistApproval_Medical" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteTrxMed">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="refcodemed" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteTrxMedResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ApprovalMedTrx">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="refcodemed" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="stepid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nrp" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="status" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="reasonRej" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ApprovalMedTrxResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ApprovalMedTrxResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ApprovalMedTrx_Post">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="refcodemed" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="stepid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nrp" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="status" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="reasonRej" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ApprovalMedTrx_PostResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ApprovalMedTrx_PostResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSubordinate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nrp" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSubordinateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/wcfjson" minOccurs="0" name="GetSubordinateResult" nillable="true" type="q21:ArrayOflistSubordinate" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllSubordinate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nrp" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllSubordinateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/wcfjson" minOccurs="0" name="GetAllSubordinateResult" nillable="true" type="q22:ArrayOflistSubordinate" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListTrxCICOPerNRP">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userid" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListTrxCICOPerNRPResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/wcfjson" minOccurs="0" name="GetListTrxCICOPerNRPResult" nillable="true" type="q23:ArrayOflistCICOtrx" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListTrxOVT">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userid" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListTrxOVTResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/wcfjson" minOccurs="0" name="GetListTrxOVTResult" nillable="true" type="q24:ArrayOflistApproval_Overtime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ApprovalOVT">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="refcode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="status" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="by" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ApprovalOVTResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ApprovalOVTResult" type="xs:short" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CekApprover">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nrp1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="by1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CekApproverResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CekApproverResult" type="xs:short" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cTicketHD">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="logid1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="fullname1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="type1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="relatedept1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="category1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="subcat1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="desc1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cTicketHDResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cTicketHD2">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="logid1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="fullname1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="type1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="relatedept1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="category1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="subcat1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="desc1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cTicketHD2Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="cTicketHD2Result" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RequestOvertime">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="dateovt1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="timeovt1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="timeovt2" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nrpovt1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="reasonovt1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RequestOvertimeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RequestOvertimeResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListOvertimeByNRP">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nrp1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListOvertimeByNRPResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/wcfjson" minOccurs="0" name="ListOvertimeByNRPResult" nillable="true" type="q25:ArrayOflistOvertimeByNRP" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DelReqOvt">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idtrx1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DelReqOvtResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Submit2Approval">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idrec" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="typeapproval" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Submit2ApprovalResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="validDateforCICO">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="date1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="validDateforCICOResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="validDateforCICOResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getDataOvt1">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idovt1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getDataOvt1Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q26="http://schemas.datacontract.org/2004/07/wcfjson" minOccurs="0" name="getDataOvt1Result" nillable="true" type="q26:ArrayOflistData_Overtime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EditOVT">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="refcode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="tgl1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="tgl2" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="hour1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="hour2" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="by1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EditOVTResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="EditOVTResult" type="xs:short" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConfigDeasy">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConfigDeasyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q27="http://schemas.datacontract.org/2004/07/wcfjson" minOccurs="0" name="ConfigDeasyResult" nillable="true" type="q27:ArrayOfConfigDeasy" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ApproveAttendance">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idatt1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nrp1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="status1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ApproveAttendanceResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLastActCICO">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nrp1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLastActCICOResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q28="http://schemas.datacontract.org/2004/07/wcfjson" minOccurs="0" name="GetLastActCICOResult" nillable="true" type="q28:ArrayOfLastActCICO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="subCicofg">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nrp" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="datefrom" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="timefrom" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="type" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="lat1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="lon1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="subCicofgResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="subCicofgResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="fgValid">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nrp1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="fgValidResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="fgValidResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="subCicoWFH">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nrp" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="datefrom" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="timefrom" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="type" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="subCicoWFHResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="subCicoWFHResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="subCicoWFHOver">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nrp" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="datefrom" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="timefrom" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="type" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="subCicoWFHOverResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="subCicoWFHOverResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLastActCICOWFH">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nrp1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLastActCICOWFHResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q29="http://schemas.datacontract.org/2004/07/wcfjson" minOccurs="0" name="GetLastActCICOWFHResult" nillable="true" type="q29:ArrayOfLastActCICOWFH" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cekCicoWFH">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nrp" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="datefrom" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="type" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cekCicoWFHResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="cekCicoWFHResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cekCicoWFH2">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nrp" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="datefrom" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="type" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cekCicoWFH2Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="cekCicoWFH2Result" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cekCicoWFH3">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nrp" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="datefrom" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="type" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cekCicoWFH3Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q30="http://schemas.datacontract.org/2004/07/wcfjson" minOccurs="0" name="cekCicoWFH3Result" nillable="true" type="q30:listCICOWFH_PerDate" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="subReqCicoWFH">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nrp" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="datefrom" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="timefrom" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="type" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="reason" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="subReqCicoWFHResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="subReqCicoWFHResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListTrxCICOWFH">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userid1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListTrxCICOWFHResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q31="http://schemas.datacontract.org/2004/07/wcfjson" minOccurs="0" name="GetListTrxCICOWFHResult" nillable="true" type="q31:ArrayOflistCICOtrx" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SubCicoListApprovalWFH">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="refcode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="status" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nrp1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SubCicoListApprovalWFHResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SubCicoListApprovalWFHResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListTrxCICOWFH_NRPDate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userid1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="date1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListTrxCICOWFH_NRPDateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q32="http://schemas.datacontract.org/2004/07/wcfjson" minOccurs="0" name="GetListTrxCICOWFH_NRPDateResult" nillable="true" type="q32:ArrayOflistCICOWFH_PerDate" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DelCICOWFH">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idtrx1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DelCICOWFHResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CheckEmployeeLocation1">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nrp1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CheckEmployeeLocation1Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CheckEmployeeLocation1Result" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cTicketPOST">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q33="http://schemas.datacontract.org/2004/07/wcfjson" minOccurs="0" name="tkthelpdesk1" nillable="true" type="q33:tktHelpdesk" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cTicketPOSTResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="cTicketPOSTResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetReportAbsensiWFHAll">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nrp" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="monselect" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="yearselect" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetReportAbsensiWFHAllResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetReportAbsensiWFHClaimInternet">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nrp" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="monselect" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="yearselect" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetReportAbsensiWFHClaimInternetResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q34="http://schemas.datacontract.org/2004/07/wcfjson" minOccurs="0" name="GetReportAbsensiWFHClaimInternetResult" nillable="true" type="q34:ArrayOflistCICOWFHValid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetReportAbsensiWFOClaimOT">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nrp" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="monselect" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="yearselect" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetReportAbsensiWFOClaimOTResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q35="http://schemas.datacontract.org/2004/07/wcfjson" minOccurs="0" name="GetReportAbsensiWFOClaimOTResult" nillable="true" type="q35:ArrayOflistCICOWFOValid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CekWFHClaimInternet">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nrp" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="date1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CekWFHClaimInternetResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CekWFHClaimInternetResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CekClaimOT">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nrp1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="date1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CekClaimOTResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CekClaimOTResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SubmitWFHClaimInternet">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nrp" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="date1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="date2" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mailhour1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="saphour1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="teamshour1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SubmitWFHClaimInternetResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ApproveWFHClaimInternet">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idtrx1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="act1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ApproveWFHClaimInternetResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListTrxClaimInternet">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userid1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListTrxClaimInternetResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q36="http://schemas.datacontract.org/2004/07/wcfjson" minOccurs="0" name="GetListTrxClaimInternetResult" nillable="true" type="q36:ArrayOflistApproval_ClaimInternet" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EditWFHClaimInternet">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idtrx1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mailhour1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="saphour1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="teamshour1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nrp1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dateclaim1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dateclaim2" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EditWFHClaimInternetResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDataTrxClaimInternet">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idtrx1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDataTrxClaimInternetResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q37="http://schemas.datacontract.org/2004/07/wcfjson" minOccurs="0" name="GetDataTrxClaimInternetResult" nillable="true" type="q37:ArrayOflistApproval_ClaimInternet" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetReportAbsv2">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nrp1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mon1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="year1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetReportAbsv2Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q38="http://schemas.datacontract.org/2004/07/wcfjson" minOccurs="0" name="GetReportAbsv2Result" nillable="true" type="q38:ArrayOflistReportAbsense_v2" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetWorkSchedule">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nrp1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mon1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="year1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetWorkScheduleResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q39="http://schemas.datacontract.org/2004/07/wcfjson" minOccurs="0" name="GetWorkScheduleResult" nillable="true" type="q39:ArrayOflistWorkSchedule" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetWorkSchedulePerDate1">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nrp1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="date1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetWorkSchedulePerDate1Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q40="http://schemas.datacontract.org/2004/07/wcfjson" minOccurs="0" name="GetWorkSchedulePerDate1Result" nillable="true" type="q40:listWorkSchedule" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertWFHSchedule">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nrp1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="date1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="time1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="time2" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertWFHScheduleResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteWFHSchedule">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nrp1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="date1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteWFHScheduleResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetWorkSchedule_Date">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nrp1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="date1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetWorkSchedule_DateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q41="http://schemas.datacontract.org/2004/07/wcfjson" minOccurs="0" name="GetWorkSchedule_DateResult" nillable="true" type="q41:ArrayOflistWorkSchedule" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MailChangeWFHSchedule">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nrp1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="date1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MailChangeWFHScheduleResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListFamilyMemberByNRP">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nrp1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListFamilyMemberByNRPResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q42="http://schemas.datacontract.org/2004/07/wcfjson" minOccurs="0" name="GetListFamilyMemberByNRPResult" nillable="true" type="q42:ArrayOflistFamilymember" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFamilyMemberData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFamilyMemberDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q43="http://schemas.datacontract.org/2004/07/wcfjson" minOccurs="0" name="GetFamilyMemberDataResult" nillable="true" type="q43:ArrayOflistFamilymember" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateFamilyMemberData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="type1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="number1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dateofbirth1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="birthplace1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="cityofbirth1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="gender1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="jobtype1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nik1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nama1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nohp1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dateofmarried1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="vac1" type="xs:short" />
+        <xs:element minOccurs="0" name="emailpriv1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="vacbefore1" type="xs:short" />
+        <xs:element minOccurs="0" name="statusnikah1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="custjourney1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="kodekabkerja1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="vacprovider1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="vacshot1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="vacshot2" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateFamilyMemberDataResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddFamilyMemberData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="type1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dateofbirth1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="birthplace1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="cityofbirth1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="gender1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="jobtype1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nik1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nama1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nohp1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dateofmarried1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nrp1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="alamat1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="kelurahan1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="kecamatan1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="kabkota1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="propinsi1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="alamatktp1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="kelurahanktp1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="kecamatanktp1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="kabkotaktp1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="propinsiktp1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="vac1" type="xs:short" />
+        <xs:element minOccurs="0" name="emailpriv1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="vacbefore1" type="xs:short" />
+        <xs:element minOccurs="0" name="statusnikah1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="custjourney1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="kodekabkerja1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="vacprovider1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="vacshot1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="vacshot2" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddFamilyMemberDataResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEmployeeAddressData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nrp1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEmployeeAddressDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q44="http://schemas.datacontract.org/2004/07/wcfjson" minOccurs="0" name="GetEmployeeAddressDataResult" nillable="true" type="q44:ArrayOfemployeeAddress" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFamilyAddressData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idfamily1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFamilyAddressDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q45="http://schemas.datacontract.org/2004/07/wcfjson" minOccurs="0" name="GetFamilyAddressDataResult" nillable="true" type="q45:ArrayOfemployeeFamilyAddress" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateEmpAddressData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nrpemployee1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="alamat1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="kelurahan1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="kecamatan1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="kabkota1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="propinsi1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nohp1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nik1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="vac1" type="xs:short" />
+        <xs:element minOccurs="0" name="alamatktp1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="kelurahanktp1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="kecamatanktp1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="kabkotaktp1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="propinsiktp1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="emailpriv1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="vacbefore1" type="xs:short" />
+        <xs:element minOccurs="0" name="statusnikah1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="custjourney1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="vaccine_provider1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="namektp1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="kodekabkerja1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="shot1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="shot2" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateEmpAddressDataResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateFamAddressData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="idfamily1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="alamat1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="kelurahan1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="kecamatan1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="kabkota1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="propinsi1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="alamatktp1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="kelurahanktp1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="kecamatanktp1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="kabkotaktp1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="propinsiktp1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateFamAddressDataResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteFamilyData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idfamily1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteFamilyDataResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertTrxOvertime">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nrp1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dateot1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dateot2" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="reason1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertTrxOvertimeResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListTrxMedByNRP">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nrp1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListTrxMedByNRPResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q46="http://schemas.datacontract.org/2004/07/wcfjson" minOccurs="0" name="GetListTrxMedByNRPResult" nillable="true" type="q46:ArrayOflistApproval_Medical" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListPatient">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nrp1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListPatientResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q47="http://schemas.datacontract.org/2004/07/wcfjson" minOccurs="0" name="GetListPatientResult" nillable="true" type="q47:ArrayOflistPatient" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="saveTrxMed">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nrp1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="year1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="amount1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="kuida1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="diagnosa1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="namapasien1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="saveTrxMedResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="saveTrxMedResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListKabKotaKerja">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListKabKotaKerjaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q48="http://schemas.datacontract.org/2004/07/wcfjson" minOccurs="0" name="GetListKabKotaKerjaResult" nillable="true" type="q48:ArrayOflistKabKotaKerja" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetHPAuth64">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="hp1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetHPAuth64Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetHPAuth64Result" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetHCUserID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userid1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetHCUserIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q49="http://schemas.datacontract.org/2004/07/wcfjson" minOccurs="0" name="GetHCUserIDResult" nillable="true" type="q49:userHealthCard" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetHCHP">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="hp1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetHCHPResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q50="http://schemas.datacontract.org/2004/07/wcfjson" minOccurs="0" name="GetHCHPResult" nillable="true" type="q50:userHealthCard_HP" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetHCPreStatus">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userid1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="hp1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetHCPreStatusResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetHCPreStatusResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetHCUserID_ByProfileID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="profileid1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetHCUserID_ByProfileIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q51="http://schemas.datacontract.org/2004/07/wcfjson" minOccurs="0" name="GetHCUserID_ByProfileIDResult" nillable="true" type="q51:userHealthCard" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetHCHP_ByProfileID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="profileid1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetHCHP_ByProfileIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q52="http://schemas.datacontract.org/2004/07/wcfjson" minOccurs="0" name="GetHCHP_ByProfileIDResult" nillable="true" type="q52:userHealthCard_HP" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="saveHCPrelim">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="profileid1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="testtype1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="testdate1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="contactyesno1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="contactyesnodetail1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="emergencyno1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="emergencyrelation1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="temperature1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="oxygennum1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="symptomps1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sesaknafas1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="demam1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="demamhari1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="menggigil1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mual1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="diare1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pegal1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="batuk1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pilek1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="penciumandrop1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="perasadrop1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="muntah1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sakitlambung1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sakitkepala1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="others1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="eatnormal1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="komorbid_jantung1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="komorbid_diabetes1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="komorbid_bronkitis1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="komorbid_autoimun1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="komorbid_ginjal1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="komorbid_tbc1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="komorbid_kanker1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="komorbid_hipertensi1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="komorbid_others1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="saveHCPrelimResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="saveHCDaily">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="profileid1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="filldate1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="temperature1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="oxygennum1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="symptomps1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sesaknafas1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="demam1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="demamhari1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="menggigil1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mual1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="diare1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pegal1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="batuk1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pilek1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="penciumandrop1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="perasadrop1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="muntah1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sakitlambung1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sakitkepala1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="others1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="eatnormal1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="saveHCDailyResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetActEmployee">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userid1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetActEmployeeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q53="http://schemas.datacontract.org/2004/07/wcfjson" minOccurs="0" name="GetActEmployeeResult" nillable="true" type="q53:ArrayOfuserHealthCard" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HCListUID">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HCListUIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q54="http://schemas.datacontract.org/2004/07/wcfjson" minOccurs="0" name="HCListUIDResult" nillable="true" type="q54:ArrayOfuserHealthCard" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HCSaveUID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userid1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HCSaveUIDResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HCSaveStatus_PID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="profileid1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="status1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HCSaveStatus_PIDResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HCListHP">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HCListHPResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q55="http://schemas.datacontract.org/2004/07/wcfjson" minOccurs="0" name="HCListHPResult" nillable="true" type="q55:ArrayOfuserHealthCard_HP" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HCSaveHP">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="hp1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nik1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nama1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="div1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="cbg1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="job1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="emailadd1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="gender1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HCSaveHPResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getabstype">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getabstypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q56="http://schemas.datacontract.org/2004/07/wcfjson" minOccurs="0" name="getabstypeResult" nillable="true" type="q56:ArrayOflistAbsenceType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getListApproval_ByUsername">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getListApproval_ByUsernameResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q57="http://schemas.datacontract.org/2004/07/wcfjson" minOccurs="0" name="getListApproval_ByUsernameResult" nillable="true" type="q57:ArrayOfapprovallist_byusername" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getSisaMed">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nrp1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="year1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getSisaMedResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q58="http://schemas.datacontract.org/2004/07/wcfjson" minOccurs="0" name="getSisaMedResult" nillable="true" type="q58:listlimitmedical" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getPersonelAreaCode">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getPersonelAreaCodeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q59="http://schemas.datacontract.org/2004/07/wcfjson" minOccurs="0" name="getPersonelAreaCodeResult" nillable="true" type="q59:ArrayOflistpersonnelarea" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getSubPersonelAreaCode">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pccode1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getSubPersonelAreaCodeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q60="http://schemas.datacontract.org/2004/07/wcfjson" minOccurs="0" name="getSubPersonelAreaCodeResult" nillable="true" type="q60:ArrayOflistpersonnelsubarea" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="postLogPKB">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nrp1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="postLogPKBResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getListClaimKm1">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nrp1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getListClaimKm1Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q61="http://schemas.datacontract.org/2004/07/wcfjson" minOccurs="0" name="getListClaimKm1Result" nillable="true" type="q61:ArrayOflistClaimKacamata" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getClaimKmDetail1">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getClaimKmDetail1Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q62="http://schemas.datacontract.org/2004/07/wcfjson" minOccurs="0" name="getClaimKmDetail1Result" nillable="true" type="q62:listClaimKacamata" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="deClaimKm1">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="deClaimKm1Response">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getListItemClaimKM1">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getListItemClaimKM1Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q63="http://schemas.datacontract.org/2004/07/wcfjson" minOccurs="0" name="getListItemClaimKM1Result" nillable="true" type="q63:ArrayOflistItemClaim_Kacamata" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getListClaimantName1">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nrp1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getListClaimantName1Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q64="http://schemas.datacontract.org/2004/07/wcfjson" minOccurs="0" name="getListClaimantName1Result" nillable="true" type="q64:ArrayOflistClaimant_Kacamata" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getLastItemClaimKM">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="item1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nrp1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="claimant1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getLastItemClaimKMResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="getLastItemClaimKMResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="addItemClaimKM1">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nrp1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dateoforigin1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="claimant1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="wagetype1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="amount1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="addItemClaimKM1Response">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getClaimLimitKM1">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nrp1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="itemcode1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getClaimLimitKM1Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q65="http://schemas.datacontract.org/2004/07/wcfjson" minOccurs="0" name="getClaimLimitKM1Result" nillable="true" type="q65:listLimitClaim_Kacamata" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="submitClaimKM1">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nrp1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="claimant1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="claimantname1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="lastclaimframe1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="lastclaimlensa1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="framecode1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="frameamount1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="lensacode1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="lensaamount1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="totalamount1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="keterangan1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="submitClaimKM1Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="submitClaimKM1Result" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getClaimKMElig1">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nrp1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getClaimKMElig1Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="getClaimKMElig1Result" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="dbrd_empprofile1">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nrp1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="dbrd_empprofile1Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q66="http://schemas.datacontract.org/2004/07/wcfjson" minOccurs="0" name="dbrd_empprofile1Result" nillable="true" type="q66:empProfile3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="dbrd_empaddress1">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nrp1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="dbrd_empaddress1Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q67="http://schemas.datacontract.org/2004/07/wcfjson" minOccurs="0" name="dbrd_empaddress1Result" nillable="true" type="q67:ArrayOfempAddress" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="authUser">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pwd" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="authUserResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="authUserResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="authUser64">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pwd" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="authUser64Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="authUser64Result" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cekAttendance1">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nrp" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="datefrom" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dateto" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cekAttendance1Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="cekAttendance1Result" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="subAttendance1">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nrp" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dateattend" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="timefrom" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="timeto" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="attendcode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="subAttendance1Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="subAttendance1Result" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cekCico1">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nrp" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="datefrom" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="type" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cekCico1Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="cekCico1Result" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cekCico2">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nrp" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="datefrom" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="type" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cekCico2Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="cekCico2Result" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="subCico1">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nrp" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="datefrom" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="timefrom" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="type" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="reason" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="subCico1Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="subCico1Result" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ApprovalMedTrx1">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="refcodemed" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="stepid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nrp" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="status" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="reasonRej" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ApprovalMedTrx1Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ApprovalMedTrx1Result" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getEmpDP1">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="emailadd" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getEmpDP1Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="getEmpDP1Result" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListTrxMed1">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userid" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListTrxMed1Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q68="http://schemas.datacontract.org/2004/07/wcfjson" minOccurs="0" name="GetListTrxMed1Result" nillable="true" type="q68:ArrayOflistApproval_Medical" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateTicketHD">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="logid1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="fullname1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="type1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="relatedept1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="category1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="subcat1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="desc1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateTicketHDResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="submit2approval1">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idrec" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="typeApproval" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="submit2approval1Response">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEmpProfile1">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userid" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEmpProfile1Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q69="http://schemas.datacontract.org/2004/07/wcfjson" minOccurs="0" name="GetEmpProfile1Result" nillable="true" type="q69:ArrayOfempProfile" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="validDateCICO1">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="date1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="validDateCICO1Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="validDateCICO1Result" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cekOnleave1">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nrp" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="datefrom" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dateto" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cekOnleave1Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q70="http://schemas.datacontract.org/2004/07/wcfjson" minOccurs="0" name="cekOnleave1Result" nillable="true" type="q70:ArrayOfcekOnleave" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getDateServ1">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getDateServ1Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="getDateServ1Result" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="subCicofg1">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nrp" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="datefrom" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="timefrom" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="type" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="lat1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="lon1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="subCicofg1Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="subCicofg1Result" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="validFG">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nrp1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="validFGResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="validFGResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLastActCICOWFH1">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nrp1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLastActCICOWFH1Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q71="http://schemas.datacontract.org/2004/07/wcfjson" minOccurs="0" name="GetLastActCICOWFH1Result" nillable="true" type="q71:ArrayOfLastActCICOWFH" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CheckEmployeeLocationSOAP1">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nrp1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CheckEmployeeLocationSOAP1Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CheckEmployeeLocationSOAP1Result" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cekCicoWFH1">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nrp" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="datefrom" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="type" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cekCicoWFH1Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="cekCicoWFH1Result" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

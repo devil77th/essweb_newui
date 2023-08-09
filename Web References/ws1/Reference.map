@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://sera18018/androidws/jsonservice.svc?wsdl" filename="Service1.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.DiscoveryDocumentReference" url="http://sera18018/androidws/jsonservice.svc?disco" filename="jsonservice.disco" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://sera18018/androidws/jsonservice.svc?xsd=xsd0" filename="jsonservice.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://sera18018/androidws/jsonservice.svc?xsd=xsd2" filename="jsonservice0.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://sera18018/androidws/jsonservice.svc?xsd=xsd1" filename="jsonservice1.xsd" />
+  </Results>
+</DiscoveryClientResultsFile>

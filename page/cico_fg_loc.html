@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Watching Me</title>
+    <script>
+        function getLocation() {
+            // Check whether browser supports Geolocation API or not
+            if (navigator.geolocation) // Supported
+            {
+                var positionOptions = {
+                    timeout: Infinity,
+                    maximumAge: 0,
+                    enableHighAccuracy: true
+                };
+                // Set the watchID
+                watchID = navigator.geolocation.watchPosition(getPosition, catchError, positionOptions);
+            }
+            else // Not supported
+            {
+                alert("Oop! This browser does not support HTML5 Geolocation.");
+            }
+        }
+        function stopWatch() {
+            navigator.geolocation.clearWatch(watchID);
+            watchID = null;
+        }
+        function getPosition(position) {
+            document.getElementById("location").innerHTML =
+                "Latitude: " + position.coords.latitude + "<br>" +
+                "Longitude: " + position.coords.longitude;
+        }
+        function catchError(error) {
+            switch (error.code) {
+                case error.TIMEOUT:
+                    alert("The request to get user location has aborted as it has taken too long.");
+                    break;
+                case error.POSITION_UNAVAILABLE:
+                    alert("Location information is not available.");
+                    break;
+                case error.PERMISSION_DENIED:
+                    alert("Permission to share location information has been denied!");
+                    break;
+                default:
+                    alert("An unknown error occurred.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Watching Me</h1>
+    <button onclick="getLocation()">Start Watching</button>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button onclick="stopWatch()">Stop Watching</button>
+    <p id="location"></p>
+</body>
+</html>
+

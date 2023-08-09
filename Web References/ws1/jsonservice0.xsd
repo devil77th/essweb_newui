@@ -1,0 +1,863 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/wcfjson" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/wcfjson" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfempFamily">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="empFamily" nillable="true" type="tns:empFamily" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfempFamily" nillable="true" type="tns:ArrayOfempFamily" />
+  <xs:complexType name="empFamily">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="begda1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="birthplace1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cityofbirth1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="dateofbirth1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="familytype1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="gender1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="id1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="name1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nik1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nrp1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="number1" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="empFamily" nillable="true" type="tns:empFamily" />
+  <xs:complexType name="ArrayOfempEducation">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="empEducation" nillable="true" type="tns:empEducation" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfempEducation" nillable="true" type="tns:ArrayOfempEducation" />
+  <xs:complexType name="empEducation">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="jenjangpendidikan1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="jurusan1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="namainstitusi1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="tgllulus1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="tglmasuk1" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="empEducation" nillable="true" type="tns:empEducation" />
+  <xs:complexType name="ArrayOfempTraining">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="empTraining" nillable="true" type="tns:empTraining" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfempTraining" nillable="true" type="tns:ArrayOfempTraining" />
+  <xs:complexType name="empTraining">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="begda1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="courseapp1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="coursename1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="educationest1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="endda1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nrp1" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="empTraining" nillable="true" type="tns:empTraining" />
+  <xs:complexType name="ArrayOfempPersonalID">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="empPersonalID" nillable="true" type="tns:empPersonalID" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfempPersonalID" nillable="true" type="tns:ArrayOfempPersonalID" />
+  <xs:complexType name="empPersonalID">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="nomor1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="tipe1" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="empPersonalID" nillable="true" type="tns:empPersonalID" />
+  <xs:complexType name="ArrayOfempTaxData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="empTaxData" nillable="true" type="tns:empTaxData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfempTaxData" nillable="true" type="tns:ArrayOfempTaxData" />
+  <xs:complexType name="empTaxData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="jmlh1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nonpwp1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="status1" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="empTaxData" nillable="true" type="tns:empTaxData" />
+  <xs:complexType name="ArrayOflistClaim_Kacamata_Detail">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="listClaim_Kacamata_Detail" nillable="true" type="tns:listClaim_Kacamata_Detail" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOflistClaim_Kacamata_Detail" nillable="true" type="tns:ArrayOflistClaim_Kacamata_Detail" />
+  <xs:complexType name="listClaim_Kacamata_Detail">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="amount1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="claimant1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="dateoforigin1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="id1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nrp1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="wagetype1" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="listClaim_Kacamata_Detail" nillable="true" type="tns:listClaim_Kacamata_Detail" />
+  <xs:complexType name="ArrayOfempWarning">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="empWarning" nillable="true" type="tns:empWarning" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfempWarning" nillable="true" type="tns:ArrayOfempWarning" />
+  <xs:complexType name="empWarning">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="begda1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="endda1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="reason1" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="empWarning" nillable="true" type="tns:empWarning" />
+  <xs:complexType name="ArrayOflistApproval_Overtime">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="listApproval_Overtime" nillable="true" type="tns:listApproval_Overtime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOflistApproval_Overtime" nillable="true" type="tns:ArrayOflistApproval_Overtime" />
+  <xs:complexType name="listApproval_Overtime">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="fullname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="idtrx" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nameapprover1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nrp1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nrpapprover1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="reason" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="status1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="timefrom" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="timefromapp" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="timeto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="timetoapp" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="listApproval_Overtime" nillable="true" type="tns:listApproval_Overtime" />
+  <xs:complexType name="ArrayOfempProfile">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="empProfile" nillable="true" type="tns:empProfile" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfempProfile" nillable="true" type="tns:ArrayOfempProfile" />
+  <xs:complexType name="empProfile">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="displayname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="emailadd" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="gol" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="location" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nrp" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="remaincutibesar" type="xs:int" />
+      <xs:element minOccurs="0" name="remaincutitahunan" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="empProfile" nillable="true" type="tns:empProfile" />
+  <xs:complexType name="ArrayOfempProfileHelpdesk">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="empProfileHelpdesk" nillable="true" type="tns:empProfileHelpdesk" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfempProfileHelpdesk" nillable="true" type="tns:ArrayOfempProfileHelpdesk" />
+  <xs:complexType name="empProfileHelpdesk">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="displayname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="emailadd" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nrp" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="empProfileHelpdesk" nillable="true" type="tns:empProfileHelpdesk" />
+  <xs:complexType name="ArrayOflistEmployee">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="listEmployee" nillable="true" type="tns:listEmployee" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOflistEmployee" nillable="true" type="tns:ArrayOflistEmployee" />
+  <xs:complexType name="listEmployee">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="emailadd" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="longname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nrp" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="listEmployee" nillable="true" type="tns:listEmployee" />
+  <xs:complexType name="ArrayOflistCICOtrx">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="listCICOtrx" nillable="true" type="tns:listCICOtrx" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOflistCICOtrx" nillable="true" type="tns:ArrayOflistCICOtrx" />
+  <xs:complexType name="listCICOtrx">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="clockCICO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="dateCICO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fullname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="idtrx" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="reasonCICO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="typeCICO" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="listCICOtrx" nillable="true" type="tns:listCICOtrx" />
+  <xs:complexType name="ArrayOflistApproval_absence">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="listApproval_absence" nillable="true" type="tns:listApproval_absence" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOflistApproval_absence" nillable="true" type="tns:ArrayOflistApproval_absence" />
+  <xs:complexType name="listApproval_absence">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="absencecode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cdatefrom" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cdateto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="datefrom" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="dateto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fullname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="idtrx" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="numdays" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="listApproval_absence" nillable="true" type="tns:listApproval_absence" />
+  <xs:complexType name="ArrayOflistApproval_attendance">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="listApproval_attendance" nillable="true" type="tns:listApproval_attendance" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOflistApproval_attendance" nillable="true" type="tns:ArrayOflistApproval_attendance" />
+  <xs:complexType name="listApproval_attendance">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="attendcode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="dateattend" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fullname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="idtrx" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="reason1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="timefrom" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="timeto" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="listApproval_attendance" nillable="true" type="tns:listApproval_attendance" />
+  <xs:complexType name="ArrayOfcekOnleave">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="cekOnleave" nillable="true" type="tns:cekOnleave" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfcekOnleave" nillable="true" type="tns:ArrayOfcekOnleave" />
+  <xs:complexType name="cekOnleave">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="flgTrx" type="xs:boolean" />
+      <xs:element minOccurs="0" name="numOnleave" type="xs:short" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="cekOnleave" nillable="true" type="tns:cekOnleave" />
+  <xs:complexType name="ArrayOfempProfile2">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="empProfile2" nillable="true" type="tns:empProfile2" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfempProfile2" nillable="true" type="tns:ArrayOfempProfile2" />
+  <xs:complexType name="empProfile2">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="agama" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="namakaryawan" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="negara_kelahiran" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nrp" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="pwddpa" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="sex" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="status" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="tgl_lahir" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="uiddpa" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="empProfile2" nillable="true" type="tns:empProfile2" />
+  <xs:complexType name="ArrayOflistApproval_Medical">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="listApproval_Medical" nillable="true" type="tns:listApproval_Medical" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOflistApproval_Medical" nillable="true" type="tns:ArrayOflistApproval_Medical" />
+  <xs:complexType name="listApproval_Medical">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="amount" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="createdate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="diagnosa" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="flgupdate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fullname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="idtrx" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="kodeklaim" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="limitmedical" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="namapasien" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="onrequest" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="reason1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="receiptdate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="sisaamount" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="statusapproval" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="step1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="tglapproval1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="tglapproval2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="usedamount" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="listApproval_Medical" nillable="true" type="tns:listApproval_Medical" />
+  <xs:complexType name="ArrayOflistSubordinate">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="listSubordinate" nillable="true" type="tns:listSubordinate" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOflistSubordinate" nillable="true" type="tns:ArrayOflistSubordinate" />
+  <xs:complexType name="listSubordinate">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="fullname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nrp" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="listSubordinate" nillable="true" type="tns:listSubordinate" />
+  <xs:complexType name="ArrayOflistOvertimeByNRP">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="listOvertimeByNRP" nillable="true" type="tns:listOvertimeByNRP" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOflistOvertimeByNRP" nillable="true" type="tns:ArrayOflistOvertimeByNRP" />
+  <xs:complexType name="listOvertimeByNRP">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="createdateovt1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="id1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nrp1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="reasonovt1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="statusovt1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="timeovt1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="timeovt2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="timeovtapp1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="timeovtapp2" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="listOvertimeByNRP" nillable="true" type="tns:listOvertimeByNRP" />
+  <xs:complexType name="ArrayOflistData_Overtime">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="listData_Overtime" nillable="true" type="tns:listData_Overtime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOflistData_Overtime" nillable="true" type="tns:ArrayOflistData_Overtime" />
+  <xs:complexType name="listData_Overtime">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="actci" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="actco" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="durasi" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fullname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="idtrx" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="jmlovt1bulan" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="jmlovt1hari" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="jmlovt1mggu" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nrp" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="reason" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="statusovt" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="timefrom" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="timeto" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="listData_Overtime" nillable="true" type="tns:listData_Overtime" />
+  <xs:complexType name="ArrayOfConfigDeasy">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ConfigDeasy" nillable="true" type="tns:ConfigDeasy" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfConfigDeasy" nillable="true" type="tns:ArrayOfConfigDeasy" />
+  <xs:complexType name="ConfigDeasy">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="clientid" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="clientsecret" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="hostname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="proxypassword" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="proxyuri" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="proxyusername" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="url" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="version" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ConfigDeasy" nillable="true" type="tns:ConfigDeasy" />
+  <xs:complexType name="ArrayOfLastActCICO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="LastActCICO" nillable="true" type="tns:LastActCICO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfLastActCICO" nillable="true" type="tns:ArrayOfLastActCICO" />
+  <xs:complexType name="LastActCICO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="act1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="datecico1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="idtrx1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nrp1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="timecico1" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LastActCICO" nillable="true" type="tns:LastActCICO" />
+  <xs:complexType name="ArrayOfLastActCICOWFH">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="LastActCICOWFH" nillable="true" type="tns:LastActCICOWFH" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfLastActCICOWFH" nillable="true" type="tns:ArrayOfLastActCICOWFH" />
+  <xs:complexType name="LastActCICOWFH">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="actwfh1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="datecicowfh1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="idtrx1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nrp1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="timecicowfh1" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LastActCICOWFH" nillable="true" type="tns:LastActCICOWFH" />
+  <xs:complexType name="listCICOWFH_PerDate">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="clockCICO1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="dateCICO1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fullname1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="idtrx1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="typeCICO1" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="listCICOWFH_PerDate" nillable="true" type="tns:listCICOWFH_PerDate" />
+  <xs:complexType name="ArrayOflistCICOWFH_PerDate">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="listCICOWFH_PerDate" nillable="true" type="tns:listCICOWFH_PerDate" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOflistCICOWFH_PerDate" nillable="true" type="tns:ArrayOflistCICOWFH_PerDate" />
+  <xs:complexType name="tktHelpdesk">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="category1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="desc1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fullname1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="logid1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="relateddept1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="subcat1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="type1" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="tktHelpdesk" nillable="true" type="tns:tktHelpdesk" />
+  <xs:complexType name="ArrayOflistCICOWFHValid">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="listCICOWFHValid" nillable="true" type="tns:listCICOWFHValid" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOflistCICOWFHValid" nillable="true" type="tns:ArrayOflistCICOWFHValid" />
+  <xs:complexType name="listCICOWFHValid">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="clockinWFH1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="clockoutWFH1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="dateCICOWFH1" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="listCICOWFHValid" nillable="true" type="tns:listCICOWFHValid" />
+  <xs:complexType name="ArrayOflistCICOWFOValid">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="listCICOWFOValid" nillable="true" type="tns:listCICOWFOValid" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOflistCICOWFOValid" nillable="true" type="tns:ArrayOflistCICOWFOValid" />
+  <xs:complexType name="listCICOWFOValid">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="clockinWFO1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="clockoutWFO1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="dateCICOWFO1" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="listCICOWFOValid" nillable="true" type="tns:listCICOWFOValid" />
+  <xs:complexType name="ArrayOflistApproval_ClaimInternet">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="listApproval_ClaimInternet" nillable="true" type="tns:listApproval_ClaimInternet" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOflistApproval_ClaimInternet" nillable="true" type="tns:ArrayOflistApproval_ClaimInternet" />
+  <xs:complexType name="listApproval_ClaimInternet">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="dateclaim1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="dateclaim2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fullname1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="idtrx1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="mailhour1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="saphour1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="teamshour1" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="listApproval_ClaimInternet" nillable="true" type="tns:listApproval_ClaimInternet" />
+  <xs:complexType name="ArrayOflistReportAbsense_v2">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="listReportAbsense_v2" nillable="true" type="tns:listReportAbsense_v2" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOflistReportAbsense_v2" nillable="true" type="tns:ArrayOflistReportAbsense_v2" />
+  <xs:complexType name="listReportAbsense_v2">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="abswfo1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="attwfo1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ciwfh1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ciwfo1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cowfh1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cowfo1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="hari1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="liburwfo1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="reqmailhour1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="reqsaphour1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="reqteamshour1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="statusreqclaim1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="tgl1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="wsin1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="wsout1" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="listReportAbsense_v2" nillable="true" type="tns:listReportAbsense_v2" />
+  <xs:complexType name="ArrayOflistWorkSchedule">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="listWorkSchedule" nillable="true" type="tns:listWorkSchedule" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOflistWorkSchedule" nillable="true" type="tns:ArrayOflistWorkSchedule" />
+  <xs:complexType name="listWorkSchedule">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ciwfh1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ciwfo1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cowfh1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cowfo1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="hari1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="liburwfo1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="status1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="tgl1" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="listWorkSchedule" nillable="true" type="tns:listWorkSchedule" />
+  <xs:complexType name="ArrayOflistFamilymember">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="listFamilymember" nillable="true" type="tns:listFamilymember" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOflistFamilymember" nillable="true" type="tns:ArrayOflistFamilymember" />
+  <xs:complexType name="listFamilymember">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="custjourney1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="emailpriv1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="idfamily1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="jeniskelamin1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="job1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="kodekabkerja1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nama1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="negarakelahiran1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nik1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nohp1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="num1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="status1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="statusnikah1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="tempatlahir1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="tgllahir1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="vac1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="vacbefore1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="vacprovider1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="vacshot1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="vacshot2" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="listFamilymember" nillable="true" type="tns:listFamilymember" />
+  <xs:complexType name="ArrayOfemployeeAddress">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="employeeAddress" nillable="true" type="tns:employeeAddress" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfemployeeAddress" nillable="true" type="tns:ArrayOfemployeeAddress" />
+  <xs:complexType name="employeeAddress">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="alamat1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="alamatktp1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="custjourney1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="emailpriv1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="id1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="kab_kota1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="kabkotaktp1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="kecamatan1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="kecamatanktp1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="kelurahan1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="kelurahanktp1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="kodekabkerja1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="namaktp1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nik1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nohp1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nrpemployee1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="propinsi1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="propinsiktp1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="statuskawin1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="vac1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="vacbefore1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="vacprovider1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="vacshot1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="vacshot2" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="employeeAddress" nillable="true" type="tns:employeeAddress" />
+  <xs:complexType name="ArrayOfemployeeFamilyAddress">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="employeeFamilyAddress" nillable="true" type="tns:employeeFamilyAddress" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfemployeeFamilyAddress" nillable="true" type="tns:ArrayOfemployeeFamilyAddress" />
+  <xs:complexType name="employeeFamilyAddress">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="alamat1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="alamatktp1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="id1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="idfamily1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="kab_kota1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="kabkotaktp1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="kecamatan1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="kecamatanktp1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="kelurahan1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="kelurahanktp1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="propinsi1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="propinsiktp1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="vac1" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="employeeFamilyAddress" nillable="true" type="tns:employeeFamilyAddress" />
+  <xs:complexType name="ArrayOflistPatient">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="listPatient" nillable="true" type="tns:listPatient" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOflistPatient" nillable="true" type="tns:ArrayOflistPatient" />
+  <xs:complexType name="listPatient">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="fullname" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="listPatient" nillable="true" type="tns:listPatient" />
+  <xs:complexType name="ArrayOflistKabKotaKerja">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="listKabKotaKerja" nillable="true" type="tns:listKabKotaKerja" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOflistKabKotaKerja" nillable="true" type="tns:ArrayOflistKabKotaKerja" />
+  <xs:complexType name="listKabKotaKerja">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="kodekabkotakerja1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="namakabkotakerja1" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="listKabKotaKerja" nillable="true" type="tns:listKabKotaKerja" />
+  <xs:complexType name="userHealthCard">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="companyname1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="costcenter1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="emailadd1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fullname1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="gender1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="idhc1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="jobName1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="login1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nrp1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="personnelareaname1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="personnelsubareaname1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="posName1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="status1" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="userHealthCard" nillable="true" type="tns:userHealthCard" />
+  <xs:complexType name="userHealthCard_HP">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="cbg1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="div1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="emailadd1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="gender1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="hp1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="idprofile1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="job1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nama1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nik1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="noteprofile1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="noteprofiledetail1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="status1" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="userHealthCard_HP" nillable="true" type="tns:userHealthCard_HP" />
+  <xs:complexType name="ArrayOfuserHealthCard">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="userHealthCard" nillable="true" type="tns:userHealthCard" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfuserHealthCard" nillable="true" type="tns:ArrayOfuserHealthCard" />
+  <xs:complexType name="ArrayOfuserHealthCard_HP">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="userHealthCard_HP" nillable="true" type="tns:userHealthCard_HP" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfuserHealthCard_HP" nillable="true" type="tns:ArrayOfuserHealthCard_HP" />
+  <xs:complexType name="ArrayOflistAbsenceType">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="listAbsenceType" nillable="true" type="tns:listAbsenceType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOflistAbsenceType" nillable="true" type="tns:ArrayOflistAbsenceType" />
+  <xs:complexType name="listAbsenceType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="absencecode1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="absencetype1" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="listAbsenceType" nillable="true" type="tns:listAbsenceType" />
+  <xs:complexType name="ArrayOfapprovallist_byusername">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="approvallist_byusername" nillable="true" type="tns:approvallist_byusername" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfapprovallist_byusername" nillable="true" type="tns:ArrayOfapprovallist_byusername" />
+  <xs:complexType name="approvallist_byusername">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="folio1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="linkapproval1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="name1" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="approvallist_byusername" nillable="true" type="tns:approvallist_byusername" />
+  <xs:complexType name="listlimitmedical">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="limit1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="onrequest1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="sdhdigunakan1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="sisa1" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="listlimitmedical" nillable="true" type="tns:listlimitmedical" />
+  <xs:complexType name="ArrayOflistpersonnelarea">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="listpersonnelarea" nillable="true" type="tns:listpersonnelarea" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOflistpersonnelarea" nillable="true" type="tns:ArrayOflistpersonnelarea" />
+  <xs:complexType name="listpersonnelarea">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="pccode1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="pcdesc1" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="listpersonnelarea" nillable="true" type="tns:listpersonnelarea" />
+  <xs:complexType name="ArrayOflistpersonnelsubarea">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="listpersonnelsubarea" nillable="true" type="tns:listpersonnelsubarea" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOflistpersonnelsubarea" nillable="true" type="tns:ArrayOflistpersonnelsubarea" />
+  <xs:complexType name="listpersonnelsubarea">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="pcsubcode1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="pcsubdesc1" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="listpersonnelsubarea" nillable="true" type="tns:listpersonnelsubarea" />
+  <xs:complexType name="ArrayOflistClaimKacamata">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="listClaimKacamata" nillable="true" type="tns:listClaimKacamata" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOflistClaimKacamata" nillable="true" type="tns:ArrayOflistClaimKacamata" />
+  <xs:complexType name="listClaimKacamata">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="claimant1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="claimantname1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="dateclaim1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="descklaimkm1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="framecode1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="framedesc1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="frameprice1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="id1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="kodeklaim1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="lenscode1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="lensdesc1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="lensprice1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="reason1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="statusclaim1" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="listClaimKacamata" nillable="true" type="tns:listClaimKacamata" />
+  <xs:complexType name="ArrayOflistItemClaim_Kacamata">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="listItemClaim_Kacamata" nillable="true" type="tns:listItemClaim_Kacamata" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOflistItemClaim_Kacamata" nillable="true" type="tns:ArrayOflistItemClaim_Kacamata" />
+  <xs:complexType name="listItemClaim_Kacamata">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="codeess1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="codesap1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="desc1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="id1" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="listItemClaim_Kacamata" nillable="true" type="tns:listItemClaim_Kacamata" />
+  <xs:complexType name="ArrayOflistClaimant_Kacamata">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="listClaimant_Kacamata" nillable="true" type="tns:listClaimant_Kacamata" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOflistClaimant_Kacamata" nillable="true" type="tns:ArrayOflistClaimant_Kacamata" />
+  <xs:complexType name="listClaimant_Kacamata">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="claimant1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="claimantname1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="no1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nrp1" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="listClaimant_Kacamata" nillable="true" type="tns:listClaimant_Kacamata" />
+  <xs:complexType name="listLimitClaim_Kacamata">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="amount1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="kmitemcode1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="yearclaimlimit1" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="listLimitClaim_Kacamata" nillable="true" type="tns:listLimitClaim_Kacamata" />
+  <xs:complexType name="empProfile3">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="bankacct1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="bankkey1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="birthdate1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="birthplace1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cityofbirth1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="contracttype1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="costcenter1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fullname1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fullnamespv1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="gender1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="jamsostek1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="job1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="location1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="maritalstatus1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nationality1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nobpjs1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nrp1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="personalareaname1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="position1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="religion1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="useriddpa1" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="empProfile3" nillable="true" type="tns:empProfile3" />
+  <xs:complexType name="ArrayOfempAddress">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="empAddress" nillable="true" type="tns:empAddress" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfempAddress" nillable="true" type="tns:ArrayOfempAddress" />
+  <xs:complexType name="empAddress">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="addresstype1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="begda1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="city1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="country1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="hpno1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="id1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nrp1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="postalcode1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="region1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="secondaddressline1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="streetandhouseno1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="tlpno1" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="empAddress" nillable="true" type="tns:empAddress" />
+</xs:schema>

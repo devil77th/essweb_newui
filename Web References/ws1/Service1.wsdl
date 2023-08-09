@@ -1,0 +1,1781 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://sera18018/androidws/jsonservice.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://sera18018/androidws/jsonservice.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://sera18018/androidws/jsonservice.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/wcfjson" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="jsonserv_dbrd_empfamily1_InputMessage">
+    <wsdl:part name="parameters" element="tns:dbrd_empfamily1" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_dbrd_empfamily1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:dbrd_empfamily1Response" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_dbrd_empeducation1_InputMessage">
+    <wsdl:part name="parameters" element="tns:dbrd_empeducation1" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_dbrd_empeducation1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:dbrd_empeducation1Response" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_dbrd_emptraining1_InputMessage">
+    <wsdl:part name="parameters" element="tns:dbrd_emptraining1" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_dbrd_emptraining1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:dbrd_emptraining1Response" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_dbrd_emppersonalid1_InputMessage">
+    <wsdl:part name="parameters" element="tns:dbrd_emppersonalid1" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_dbrd_emppersonalid1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:dbrd_emppersonalid1Response" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_dbrd_taxdata1_InputMessage">
+    <wsdl:part name="parameters" element="tns:dbrd_taxdata1" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_dbrd_taxdata1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:dbrd_taxdata1Response" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_dbrd_claimkm1_InputMessage">
+    <wsdl:part name="parameters" element="tns:dbrd_claimkm1" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_dbrd_claimkm1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:dbrd_claimkm1Response" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_dbrd_empwarning1_InputMessage">
+    <wsdl:part name="parameters" element="tns:dbrd_empwarning1" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_dbrd_empwarning1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:dbrd_empwarning1Response" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_listapproval_ovt_hr_InputMessage">
+    <wsdl:part name="parameters" element="tns:listapproval_ovt_hr" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_listapproval_ovt_hr_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listapproval_ovt_hrResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetEmpProfile_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmpProfile" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetEmpProfile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmpProfileResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetEmpProfileHelpdesk_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmpProfileHelpdesk" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetEmpProfileHelpdesk_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmpProfileHelpdeskResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetEmpProfile_XML_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmpProfile_XML" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetEmpProfile_XML_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmpProfile_XMLResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetEmpProfileDP_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmpProfileDP" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetEmpProfileDP_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmpProfileDPResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetEmpProfileDP_XML_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmpProfileDP_XML" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetEmpProfileDP_XML_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmpProfileDP_XMLResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetEmpProfileDPSPOnline1_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmpProfileDPSPOnline1" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetEmpProfileDPSPOnline1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmpProfileDPSPOnline1Response" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetUserAuth_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserAuth" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetUserAuth_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserAuthResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetUserAuth64_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserAuth64" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetUserAuth64_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserAuth64Response" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetUserAuth64Post_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserAuth64Post" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetUserAuth64Post_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserAuth64PostResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetListEmployee_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetListEmployee" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetListEmployee_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetListEmployeeResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetDateFromServer_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDateFromServer" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetDateFromServer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDateFromServerResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetListTrxCICO_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetListTrxCICO" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetListTrxCICO_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetListTrxCICOResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_SubCicoListApproval_InputMessage">
+    <wsdl:part name="parameters" element="tns:SubCicoListApproval" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_SubCicoListApproval_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SubCicoListApprovalResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_postOnleave_InputMessage">
+    <wsdl:part name="parameters" element="tns:postOnleave" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_postOnleave_OutputMessage">
+    <wsdl:part name="parameters" element="tns:postOnleaveResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetListApproval_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetListApproval" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetListApproval_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetListApprovalResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetListApprovalAttendance_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetListApprovalAttendance" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetListApprovalAttendance_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetListApprovalAttendanceResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_SubAbsListApproval_InputMessage">
+    <wsdl:part name="parameters" element="tns:SubAbsListApproval" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_SubAbsListApproval_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SubAbsListApprovalResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetReportAbsensi_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetReportAbsensi" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetReportAbsensi_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetReportAbsensiResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetReportAbsensiWFH_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetReportAbsensiWFH" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetReportAbsensiWFH_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetReportAbsensiWFHResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_cekOnleave_InputMessage">
+    <wsdl:part name="parameters" element="tns:cekOnleave" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_cekOnleave_OutputMessage">
+    <wsdl:part name="parameters" element="tns:cekOnleaveResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_cekAttendance_InputMessage">
+    <wsdl:part name="parameters" element="tns:cekAttendance" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_cekAttendance_OutputMessage">
+    <wsdl:part name="parameters" element="tns:cekAttendanceResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_subAttendance_InputMessage">
+    <wsdl:part name="parameters" element="tns:subAttendance" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_subAttendance_OutputMessage">
+    <wsdl:part name="parameters" element="tns:subAttendanceResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_cekCico_InputMessage">
+    <wsdl:part name="parameters" element="tns:cekCico" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_cekCico_OutputMessage">
+    <wsdl:part name="parameters" element="tns:cekCicoResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_cekCico_v2_InputMessage">
+    <wsdl:part name="parameters" element="tns:cekCico_v2" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_cekCico_v2_OutputMessage">
+    <wsdl:part name="parameters" element="tns:cekCico_v2Response" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_subCico_InputMessage">
+    <wsdl:part name="parameters" element="tns:subCico" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_subCico_OutputMessage">
+    <wsdl:part name="parameters" element="tns:subCicoResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetEmpProfile2_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmpProfile2" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetEmpProfile2_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmpProfile2Response" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetListTrxMed_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetListTrxMed" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetListTrxMed_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetListTrxMedResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetListTrxMedPOST_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetListTrxMedPOST" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetListTrxMedPOST_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetListTrxMedPOSTResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetListTrxMedDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetListTrxMedDetail" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetListTrxMedDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetListTrxMedDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_DeleteTrxMed_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteTrxMed" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_DeleteTrxMed_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteTrxMedResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_ApprovalMedTrx_InputMessage">
+    <wsdl:part name="parameters" element="tns:ApprovalMedTrx" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_ApprovalMedTrx_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ApprovalMedTrxResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_ApprovalMedTrx_Post_InputMessage">
+    <wsdl:part name="parameters" element="tns:ApprovalMedTrx_Post" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_ApprovalMedTrx_Post_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ApprovalMedTrx_PostResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetSubordinate_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSubordinate" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetSubordinate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSubordinateResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetAllSubordinate_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllSubordinate" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetAllSubordinate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllSubordinateResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetListTrxCICOPerNRP_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetListTrxCICOPerNRP" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetListTrxCICOPerNRP_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetListTrxCICOPerNRPResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetListTrxOVT_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetListTrxOVT" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetListTrxOVT_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetListTrxOVTResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_ApprovalOVT_InputMessage">
+    <wsdl:part name="parameters" element="tns:ApprovalOVT" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_ApprovalOVT_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ApprovalOVTResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_CekApprover_InputMessage">
+    <wsdl:part name="parameters" element="tns:CekApprover" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_CekApprover_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CekApproverResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_cTicketHD_InputMessage">
+    <wsdl:part name="parameters" element="tns:cTicketHD" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_cTicketHD_OutputMessage">
+    <wsdl:part name="parameters" element="tns:cTicketHDResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_cTicketHD2_InputMessage">
+    <wsdl:part name="parameters" element="tns:cTicketHD2" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_cTicketHD2_OutputMessage">
+    <wsdl:part name="parameters" element="tns:cTicketHD2Response" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_RequestOvertime_InputMessage">
+    <wsdl:part name="parameters" element="tns:RequestOvertime" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_RequestOvertime_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RequestOvertimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_ListOvertimeByNRP_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListOvertimeByNRP" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_ListOvertimeByNRP_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListOvertimeByNRPResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_DelReqOvt_InputMessage">
+    <wsdl:part name="parameters" element="tns:DelReqOvt" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_DelReqOvt_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DelReqOvtResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_Submit2Approval_InputMessage">
+    <wsdl:part name="parameters" element="tns:Submit2Approval" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_Submit2Approval_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Submit2ApprovalResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_validDateforCICO_InputMessage">
+    <wsdl:part name="parameters" element="tns:validDateforCICO" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_validDateforCICO_OutputMessage">
+    <wsdl:part name="parameters" element="tns:validDateforCICOResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_getDataOvt1_InputMessage">
+    <wsdl:part name="parameters" element="tns:getDataOvt1" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_getDataOvt1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getDataOvt1Response" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_EditOVT_InputMessage">
+    <wsdl:part name="parameters" element="tns:EditOVT" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_EditOVT_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditOVTResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_ConfigDeasy_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConfigDeasy" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_ConfigDeasy_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConfigDeasyResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_ApproveAttendance_InputMessage">
+    <wsdl:part name="parameters" element="tns:ApproveAttendance" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_ApproveAttendance_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ApproveAttendanceResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetLastActCICO_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLastActCICO" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetLastActCICO_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLastActCICOResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_subCicofg_InputMessage">
+    <wsdl:part name="parameters" element="tns:subCicofg" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_subCicofg_OutputMessage">
+    <wsdl:part name="parameters" element="tns:subCicofgResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_fgValid_InputMessage">
+    <wsdl:part name="parameters" element="tns:fgValid" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_fgValid_OutputMessage">
+    <wsdl:part name="parameters" element="tns:fgValidResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_subCicoWFH_InputMessage">
+    <wsdl:part name="parameters" element="tns:subCicoWFH" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_subCicoWFH_OutputMessage">
+    <wsdl:part name="parameters" element="tns:subCicoWFHResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_subCicoWFHOver_InputMessage">
+    <wsdl:part name="parameters" element="tns:subCicoWFHOver" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_subCicoWFHOver_OutputMessage">
+    <wsdl:part name="parameters" element="tns:subCicoWFHOverResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetLastActCICOWFH_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLastActCICOWFH" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetLastActCICOWFH_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLastActCICOWFHResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_cekCicoWFH_InputMessage">
+    <wsdl:part name="parameters" element="tns:cekCicoWFH" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_cekCicoWFH_OutputMessage">
+    <wsdl:part name="parameters" element="tns:cekCicoWFHResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_cekCicoWFH2_InputMessage">
+    <wsdl:part name="parameters" element="tns:cekCicoWFH2" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_cekCicoWFH2_OutputMessage">
+    <wsdl:part name="parameters" element="tns:cekCicoWFH2Response" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_cekCicoWFH3_InputMessage">
+    <wsdl:part name="parameters" element="tns:cekCicoWFH3" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_cekCicoWFH3_OutputMessage">
+    <wsdl:part name="parameters" element="tns:cekCicoWFH3Response" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_subReqCicoWFH_InputMessage">
+    <wsdl:part name="parameters" element="tns:subReqCicoWFH" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_subReqCicoWFH_OutputMessage">
+    <wsdl:part name="parameters" element="tns:subReqCicoWFHResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetListTrxCICOWFH_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetListTrxCICOWFH" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetListTrxCICOWFH_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetListTrxCICOWFHResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_SubCicoListApprovalWFH_InputMessage">
+    <wsdl:part name="parameters" element="tns:SubCicoListApprovalWFH" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_SubCicoListApprovalWFH_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SubCicoListApprovalWFHResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetListTrxCICOWFH_NRPDate_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetListTrxCICOWFH_NRPDate" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetListTrxCICOWFH_NRPDate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetListTrxCICOWFH_NRPDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_DelCICOWFH_InputMessage">
+    <wsdl:part name="parameters" element="tns:DelCICOWFH" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_DelCICOWFH_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DelCICOWFHResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_CheckEmployeeLocation1_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckEmployeeLocation1" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_CheckEmployeeLocation1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckEmployeeLocation1Response" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_cTicketPOST_InputMessage">
+    <wsdl:part name="parameters" element="tns:cTicketPOST" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_cTicketPOST_OutputMessage">
+    <wsdl:part name="parameters" element="tns:cTicketPOSTResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetReportAbsensiWFHAll_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetReportAbsensiWFHAll" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetReportAbsensiWFHAll_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetReportAbsensiWFHAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetReportAbsensiWFHClaimInternet_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetReportAbsensiWFHClaimInternet" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetReportAbsensiWFHClaimInternet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetReportAbsensiWFHClaimInternetResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetReportAbsensiWFOClaimOT_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetReportAbsensiWFOClaimOT" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetReportAbsensiWFOClaimOT_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetReportAbsensiWFOClaimOTResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_CekWFHClaimInternet_InputMessage">
+    <wsdl:part name="parameters" element="tns:CekWFHClaimInternet" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_CekWFHClaimInternet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CekWFHClaimInternetResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_CekClaimOT_InputMessage">
+    <wsdl:part name="parameters" element="tns:CekClaimOT" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_CekClaimOT_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CekClaimOTResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_SubmitWFHClaimInternet_InputMessage">
+    <wsdl:part name="parameters" element="tns:SubmitWFHClaimInternet" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_SubmitWFHClaimInternet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SubmitWFHClaimInternetResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_ApproveWFHClaimInternet_InputMessage">
+    <wsdl:part name="parameters" element="tns:ApproveWFHClaimInternet" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_ApproveWFHClaimInternet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ApproveWFHClaimInternetResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetListTrxClaimInternet_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetListTrxClaimInternet" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetListTrxClaimInternet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetListTrxClaimInternetResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_EditWFHClaimInternet_InputMessage">
+    <wsdl:part name="parameters" element="tns:EditWFHClaimInternet" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_EditWFHClaimInternet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditWFHClaimInternetResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetDataTrxClaimInternet_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataTrxClaimInternet" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetDataTrxClaimInternet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataTrxClaimInternetResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetReportAbsv2_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetReportAbsv2" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetReportAbsv2_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetReportAbsv2Response" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetWorkSchedule_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWorkSchedule" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetWorkSchedule_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWorkScheduleResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetWorkSchedulePerDate1_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWorkSchedulePerDate1" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetWorkSchedulePerDate1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWorkSchedulePerDate1Response" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_InsertWFHSchedule_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertWFHSchedule" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_InsertWFHSchedule_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertWFHScheduleResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_DeleteWFHSchedule_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteWFHSchedule" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_DeleteWFHSchedule_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteWFHScheduleResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetWorkSchedule_Date_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWorkSchedule_Date" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetWorkSchedule_Date_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWorkSchedule_DateResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_MailChangeWFHSchedule_InputMessage">
+    <wsdl:part name="parameters" element="tns:MailChangeWFHSchedule" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_MailChangeWFHSchedule_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MailChangeWFHScheduleResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetListFamilyMemberByNRP_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetListFamilyMemberByNRP" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetListFamilyMemberByNRP_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetListFamilyMemberByNRPResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetFamilyMemberData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFamilyMemberData" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetFamilyMemberData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFamilyMemberDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_UpdateFamilyMemberData_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateFamilyMemberData" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_UpdateFamilyMemberData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateFamilyMemberDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_AddFamilyMemberData_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddFamilyMemberData" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_AddFamilyMemberData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddFamilyMemberDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetEmployeeAddressData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmployeeAddressData" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetEmployeeAddressData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmployeeAddressDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetFamilyAddressData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFamilyAddressData" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetFamilyAddressData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFamilyAddressDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_UpdateEmpAddressData_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateEmpAddressData" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_UpdateEmpAddressData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateEmpAddressDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_UpdateFamAddressData_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateFamAddressData" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_UpdateFamAddressData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateFamAddressDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_DeleteFamilyData_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteFamilyData" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_DeleteFamilyData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteFamilyDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_InsertTrxOvertime_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertTrxOvertime" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_InsertTrxOvertime_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertTrxOvertimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetListTrxMedByNRP_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetListTrxMedByNRP" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetListTrxMedByNRP_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetListTrxMedByNRPResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetListPatient_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetListPatient" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetListPatient_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetListPatientResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_saveTrxMed_InputMessage">
+    <wsdl:part name="parameters" element="tns:saveTrxMed" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_saveTrxMed_OutputMessage">
+    <wsdl:part name="parameters" element="tns:saveTrxMedResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetListKabKotaKerja_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetListKabKotaKerja" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetListKabKotaKerja_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetListKabKotaKerjaResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetHPAuth64_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetHPAuth64" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetHPAuth64_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetHPAuth64Response" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetHCUserID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetHCUserID" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetHCUserID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetHCUserIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetHCHP_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetHCHP" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetHCHP_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetHCHPResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetHCPreStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetHCPreStatus" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetHCPreStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetHCPreStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetHCUserID_ByProfileID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetHCUserID_ByProfileID" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetHCUserID_ByProfileID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetHCUserID_ByProfileIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetHCHP_ByProfileID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetHCHP_ByProfileID" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetHCHP_ByProfileID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetHCHP_ByProfileIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_saveHCPrelim_InputMessage">
+    <wsdl:part name="parameters" element="tns:saveHCPrelim" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_saveHCPrelim_OutputMessage">
+    <wsdl:part name="parameters" element="tns:saveHCPrelimResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_saveHCDaily_InputMessage">
+    <wsdl:part name="parameters" element="tns:saveHCDaily" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_saveHCDaily_OutputMessage">
+    <wsdl:part name="parameters" element="tns:saveHCDailyResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetActEmployee_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetActEmployee" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_GetActEmployee_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetActEmployeeResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_HCListUID_InputMessage">
+    <wsdl:part name="parameters" element="tns:HCListUID" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_HCListUID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:HCListUIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_HCSaveUID_InputMessage">
+    <wsdl:part name="parameters" element="tns:HCSaveUID" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_HCSaveUID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:HCSaveUIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_HCSaveStatus_PID_InputMessage">
+    <wsdl:part name="parameters" element="tns:HCSaveStatus_PID" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_HCSaveStatus_PID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:HCSaveStatus_PIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_HCListHP_InputMessage">
+    <wsdl:part name="parameters" element="tns:HCListHP" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_HCListHP_OutputMessage">
+    <wsdl:part name="parameters" element="tns:HCListHPResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_HCSaveHP_InputMessage">
+    <wsdl:part name="parameters" element="tns:HCSaveHP" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_HCSaveHP_OutputMessage">
+    <wsdl:part name="parameters" element="tns:HCSaveHPResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_getabstype_InputMessage">
+    <wsdl:part name="parameters" element="tns:getabstype" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_getabstype_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getabstypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_getListApproval_ByUsername_InputMessage">
+    <wsdl:part name="parameters" element="tns:getListApproval_ByUsername" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_getListApproval_ByUsername_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getListApproval_ByUsernameResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_getSisaMed_InputMessage">
+    <wsdl:part name="parameters" element="tns:getSisaMed" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_getSisaMed_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getSisaMedResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_getPersonelAreaCode_InputMessage">
+    <wsdl:part name="parameters" element="tns:getPersonelAreaCode" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_getPersonelAreaCode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getPersonelAreaCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_getSubPersonelAreaCode_InputMessage">
+    <wsdl:part name="parameters" element="tns:getSubPersonelAreaCode" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_getSubPersonelAreaCode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getSubPersonelAreaCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_postLogPKB_InputMessage">
+    <wsdl:part name="parameters" element="tns:postLogPKB" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_postLogPKB_OutputMessage">
+    <wsdl:part name="parameters" element="tns:postLogPKBResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_getListClaimKm1_InputMessage">
+    <wsdl:part name="parameters" element="tns:getListClaimKm1" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_getListClaimKm1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getListClaimKm1Response" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_getClaimKmDetail1_InputMessage">
+    <wsdl:part name="parameters" element="tns:getClaimKmDetail1" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_getClaimKmDetail1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getClaimKmDetail1Response" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_deClaimKm1_InputMessage">
+    <wsdl:part name="parameters" element="tns:deClaimKm1" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_deClaimKm1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:deClaimKm1Response" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_getListItemClaimKM1_InputMessage">
+    <wsdl:part name="parameters" element="tns:getListItemClaimKM1" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_getListItemClaimKM1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getListItemClaimKM1Response" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_getListClaimantName1_InputMessage">
+    <wsdl:part name="parameters" element="tns:getListClaimantName1" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_getListClaimantName1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getListClaimantName1Response" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_getLastItemClaimKM_InputMessage">
+    <wsdl:part name="parameters" element="tns:getLastItemClaimKM" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_getLastItemClaimKM_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getLastItemClaimKMResponse" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_addItemClaimKM1_InputMessage">
+    <wsdl:part name="parameters" element="tns:addItemClaimKM1" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_addItemClaimKM1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:addItemClaimKM1Response" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_getClaimLimitKM1_InputMessage">
+    <wsdl:part name="parameters" element="tns:getClaimLimitKM1" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_getClaimLimitKM1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getClaimLimitKM1Response" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_submitClaimKM1_InputMessage">
+    <wsdl:part name="parameters" element="tns:submitClaimKM1" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_submitClaimKM1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:submitClaimKM1Response" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_getClaimKMElig1_InputMessage">
+    <wsdl:part name="parameters" element="tns:getClaimKMElig1" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_getClaimKMElig1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getClaimKMElig1Response" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_dbrd_empprofile1_InputMessage">
+    <wsdl:part name="parameters" element="tns:dbrd_empprofile1" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_dbrd_empprofile1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:dbrd_empprofile1Response" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_dbrd_empaddress1_InputMessage">
+    <wsdl:part name="parameters" element="tns:dbrd_empaddress1" />
+  </wsdl:message>
+  <wsdl:message name="jsonserv_dbrd_empaddress1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:dbrd_empaddress1Response" />
+  </wsdl:message>
+  <wsdl:message name="soapserv_authUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:authUser" />
+  </wsdl:message>
+  <wsdl:message name="soapserv_authUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:authUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="soapserv_authUser64_InputMessage">
+    <wsdl:part name="parameters" element="tns:authUser64" />
+  </wsdl:message>
+  <wsdl:message name="soapserv_authUser64_OutputMessage">
+    <wsdl:part name="parameters" element="tns:authUser64Response" />
+  </wsdl:message>
+  <wsdl:message name="soapserv_cekAttendance1_InputMessage">
+    <wsdl:part name="parameters" element="tns:cekAttendance1" />
+  </wsdl:message>
+  <wsdl:message name="soapserv_cekAttendance1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:cekAttendance1Response" />
+  </wsdl:message>
+  <wsdl:message name="soapserv_subAttendance1_InputMessage">
+    <wsdl:part name="parameters" element="tns:subAttendance1" />
+  </wsdl:message>
+  <wsdl:message name="soapserv_subAttendance1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:subAttendance1Response" />
+  </wsdl:message>
+  <wsdl:message name="soapserv_cekCico1_InputMessage">
+    <wsdl:part name="parameters" element="tns:cekCico1" />
+  </wsdl:message>
+  <wsdl:message name="soapserv_cekCico1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:cekCico1Response" />
+  </wsdl:message>
+  <wsdl:message name="soapserv_cekCico2_InputMessage">
+    <wsdl:part name="parameters" element="tns:cekCico2" />
+  </wsdl:message>
+  <wsdl:message name="soapserv_cekCico2_OutputMessage">
+    <wsdl:part name="parameters" element="tns:cekCico2Response" />
+  </wsdl:message>
+  <wsdl:message name="soapserv_subCico1_InputMessage">
+    <wsdl:part name="parameters" element="tns:subCico1" />
+  </wsdl:message>
+  <wsdl:message name="soapserv_subCico1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:subCico1Response" />
+  </wsdl:message>
+  <wsdl:message name="soapserv_ApprovalMedTrx1_InputMessage">
+    <wsdl:part name="parameters" element="tns:ApprovalMedTrx1" />
+  </wsdl:message>
+  <wsdl:message name="soapserv_ApprovalMedTrx1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ApprovalMedTrx1Response" />
+  </wsdl:message>
+  <wsdl:message name="soapserv_getEmpDP1_InputMessage">
+    <wsdl:part name="parameters" element="tns:getEmpDP1" />
+  </wsdl:message>
+  <wsdl:message name="soapserv_getEmpDP1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getEmpDP1Response" />
+  </wsdl:message>
+  <wsdl:message name="soapserv_GetListTrxMed1_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetListTrxMed1" />
+  </wsdl:message>
+  <wsdl:message name="soapserv_GetListTrxMed1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetListTrxMed1Response" />
+  </wsdl:message>
+  <wsdl:message name="soapserv_CreateTicketHD_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateTicketHD" />
+  </wsdl:message>
+  <wsdl:message name="soapserv_CreateTicketHD_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateTicketHDResponse" />
+  </wsdl:message>
+  <wsdl:message name="soapserv_submit2approval1_InputMessage">
+    <wsdl:part name="parameters" element="tns:submit2approval1" />
+  </wsdl:message>
+  <wsdl:message name="soapserv_submit2approval1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:submit2approval1Response" />
+  </wsdl:message>
+  <wsdl:message name="soapserv_GetEmpProfile1_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmpProfile1" />
+  </wsdl:message>
+  <wsdl:message name="soapserv_GetEmpProfile1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmpProfile1Response" />
+  </wsdl:message>
+  <wsdl:message name="soapserv_validDateCICO1_InputMessage">
+    <wsdl:part name="parameters" element="tns:validDateCICO1" />
+  </wsdl:message>
+  <wsdl:message name="soapserv_validDateCICO1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:validDateCICO1Response" />
+  </wsdl:message>
+  <wsdl:message name="soapserv_cekOnleave1_InputMessage">
+    <wsdl:part name="parameters" element="tns:cekOnleave1" />
+  </wsdl:message>
+  <wsdl:message name="soapserv_cekOnleave1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:cekOnleave1Response" />
+  </wsdl:message>
+  <wsdl:message name="soapserv_getDateServ1_InputMessage">
+    <wsdl:part name="parameters" element="tns:getDateServ1" />
+  </wsdl:message>
+  <wsdl:message name="soapserv_getDateServ1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getDateServ1Response" />
+  </wsdl:message>
+  <wsdl:message name="soapserv_subCicofg1_InputMessage">
+    <wsdl:part name="parameters" element="tns:subCicofg1" />
+  </wsdl:message>
+  <wsdl:message name="soapserv_subCicofg1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:subCicofg1Response" />
+  </wsdl:message>
+  <wsdl:message name="soapserv_validFG_InputMessage">
+    <wsdl:part name="parameters" element="tns:validFG" />
+  </wsdl:message>
+  <wsdl:message name="soapserv_validFG_OutputMessage">
+    <wsdl:part name="parameters" element="tns:validFGResponse" />
+  </wsdl:message>
+  <wsdl:message name="soapserv_GetLastActCICOWFH1_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLastActCICOWFH1" />
+  </wsdl:message>
+  <wsdl:message name="soapserv_GetLastActCICOWFH1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLastActCICOWFH1Response" />
+  </wsdl:message>
+  <wsdl:message name="soapserv_CheckEmployeeLocationSOAP1_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckEmployeeLocationSOAP1" />
+  </wsdl:message>
+  <wsdl:message name="soapserv_CheckEmployeeLocationSOAP1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckEmployeeLocationSOAP1Response" />
+  </wsdl:message>
+  <wsdl:message name="soapserv_cekCicoWFH1_InputMessage">
+    <wsdl:part name="parameters" element="tns:cekCicoWFH1" />
+  </wsdl:message>
+  <wsdl:message name="soapserv_cekCicoWFH1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:cekCicoWFH1Response" />
+  </wsdl:message>
+  <wsdl:portType name="jsonserv">
+    <wsdl:operation name="dbrd_empfamily1">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/dbrd_empfamily1" message="tns:jsonserv_dbrd_empfamily1_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/dbrd_empfamily1Response" message="tns:jsonserv_dbrd_empfamily1_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="dbrd_empeducation1">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/dbrd_empeducation1" message="tns:jsonserv_dbrd_empeducation1_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/dbrd_empeducation1Response" message="tns:jsonserv_dbrd_empeducation1_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="dbrd_emptraining1">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/dbrd_emptraining1" message="tns:jsonserv_dbrd_emptraining1_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/dbrd_emptraining1Response" message="tns:jsonserv_dbrd_emptraining1_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="dbrd_emppersonalid1">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/dbrd_emppersonalid1" message="tns:jsonserv_dbrd_emppersonalid1_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/dbrd_emppersonalid1Response" message="tns:jsonserv_dbrd_emppersonalid1_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="dbrd_taxdata1">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/dbrd_taxdata1" message="tns:jsonserv_dbrd_taxdata1_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/dbrd_taxdata1Response" message="tns:jsonserv_dbrd_taxdata1_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="dbrd_claimkm1">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/dbrd_claimkm1" message="tns:jsonserv_dbrd_claimkm1_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/dbrd_claimkm1Response" message="tns:jsonserv_dbrd_claimkm1_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="dbrd_empwarning1">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/dbrd_empwarning1" message="tns:jsonserv_dbrd_empwarning1_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/dbrd_empwarning1Response" message="tns:jsonserv_dbrd_empwarning1_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listapproval_ovt_hr">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/listapproval_ovt_hr" message="tns:jsonserv_listapproval_ovt_hr_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/listapproval_ovt_hrResponse" message="tns:jsonserv_listapproval_ovt_hr_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpProfile">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/GetEmpProfile" message="tns:jsonserv_GetEmpProfile_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/GetEmpProfileResponse" message="tns:jsonserv_GetEmpProfile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpProfileHelpdesk">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/GetEmpProfileHelpdesk" message="tns:jsonserv_GetEmpProfileHelpdesk_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/GetEmpProfileHelpdeskResponse" message="tns:jsonserv_GetEmpProfileHelpdesk_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpProfile_XML">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/GetEmpProfile_XML" message="tns:jsonserv_GetEmpProfile_XML_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/GetEmpProfile_XMLResponse" message="tns:jsonserv_GetEmpProfile_XML_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpProfileDP">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/GetEmpProfileDP" message="tns:jsonserv_GetEmpProfileDP_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/GetEmpProfileDPResponse" message="tns:jsonserv_GetEmpProfileDP_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpProfileDP_XML">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/GetEmpProfileDP_XML" message="tns:jsonserv_GetEmpProfileDP_XML_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/GetEmpProfileDP_XMLResponse" message="tns:jsonserv_GetEmpProfileDP_XML_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpProfileDPSPOnline1">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/GetEmpProfileDPSPOnline1" message="tns:jsonserv_GetEmpProfileDPSPOnline1_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/GetEmpProfileDPSPOnline1Response" message="tns:jsonserv_GetEmpProfileDPSPOnline1_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserAuth">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/GetUserAuth" message="tns:jsonserv_GetUserAuth_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/GetUserAuthResponse" message="tns:jsonserv_GetUserAuth_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserAuth64">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/GetUserAuth64" message="tns:jsonserv_GetUserAuth64_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/GetUserAuth64Response" message="tns:jsonserv_GetUserAuth64_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserAuth64Post">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/GetUserAuth64Post" message="tns:jsonserv_GetUserAuth64Post_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/GetUserAuth64PostResponse" message="tns:jsonserv_GetUserAuth64Post_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListEmployee">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/GetListEmployee" message="tns:jsonserv_GetListEmployee_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/GetListEmployeeResponse" message="tns:jsonserv_GetListEmployee_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDateFromServer">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/GetDateFromServer" message="tns:jsonserv_GetDateFromServer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/GetDateFromServerResponse" message="tns:jsonserv_GetDateFromServer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListTrxCICO">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/GetListTrxCICO" message="tns:jsonserv_GetListTrxCICO_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/GetListTrxCICOResponse" message="tns:jsonserv_GetListTrxCICO_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SubCicoListApproval">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/SubCicoListApproval" message="tns:jsonserv_SubCicoListApproval_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/SubCicoListApprovalResponse" message="tns:jsonserv_SubCicoListApproval_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="postOnleave">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/postOnleave" message="tns:jsonserv_postOnleave_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/postOnleaveResponse" message="tns:jsonserv_postOnleave_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListApproval">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/GetListApproval" message="tns:jsonserv_GetListApproval_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/GetListApprovalResponse" message="tns:jsonserv_GetListApproval_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListApprovalAttendance">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/GetListApprovalAttendance" message="tns:jsonserv_GetListApprovalAttendance_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/GetListApprovalAttendanceResponse" message="tns:jsonserv_GetListApprovalAttendance_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SubAbsListApproval">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/SubAbsListApproval" message="tns:jsonserv_SubAbsListApproval_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/SubAbsListApprovalResponse" message="tns:jsonserv_SubAbsListApproval_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReportAbsensi">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/GetReportAbsensi" message="tns:jsonserv_GetReportAbsensi_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/GetReportAbsensiResponse" message="tns:jsonserv_GetReportAbsensi_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReportAbsensiWFH">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/GetReportAbsensiWFH" message="tns:jsonserv_GetReportAbsensiWFH_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/GetReportAbsensiWFHResponse" message="tns:jsonserv_GetReportAbsensiWFH_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="cekOnleave">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/cekOnleave" message="tns:jsonserv_cekOnleave_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/cekOnleaveResponse" message="tns:jsonserv_cekOnleave_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="cekAttendance">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/cekAttendance" message="tns:jsonserv_cekAttendance_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/cekAttendanceResponse" message="tns:jsonserv_cekAttendance_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="subAttendance">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/subAttendance" message="tns:jsonserv_subAttendance_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/subAttendanceResponse" message="tns:jsonserv_subAttendance_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="cekCico">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/cekCico" message="tns:jsonserv_cekCico_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/cekCicoResponse" message="tns:jsonserv_cekCico_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="cekCico_v2">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/cekCico_v2" message="tns:jsonserv_cekCico_v2_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/cekCico_v2Response" message="tns:jsonserv_cekCico_v2_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="subCico">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/subCico" message="tns:jsonserv_subCico_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/subCicoResponse" message="tns:jsonserv_subCico_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpProfile2">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/GetEmpProfile2" message="tns:jsonserv_GetEmpProfile2_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/GetEmpProfile2Response" message="tns:jsonserv_GetEmpProfile2_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListTrxMed">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/GetListTrxMed" message="tns:jsonserv_GetListTrxMed_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/GetListTrxMedResponse" message="tns:jsonserv_GetListTrxMed_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListTrxMedPOST">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/GetListTrxMedPOST" message="tns:jsonserv_GetListTrxMedPOST_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/GetListTrxMedPOSTResponse" message="tns:jsonserv_GetListTrxMedPOST_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListTrxMedDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/GetListTrxMedDetail" message="tns:jsonserv_GetListTrxMedDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/GetListTrxMedDetailResponse" message="tns:jsonserv_GetListTrxMedDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteTrxMed">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/DeleteTrxMed" message="tns:jsonserv_DeleteTrxMed_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/DeleteTrxMedResponse" message="tns:jsonserv_DeleteTrxMed_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ApprovalMedTrx">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/ApprovalMedTrx" message="tns:jsonserv_ApprovalMedTrx_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/ApprovalMedTrxResponse" message="tns:jsonserv_ApprovalMedTrx_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ApprovalMedTrx_Post">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/ApprovalMedTrx_Post" message="tns:jsonserv_ApprovalMedTrx_Post_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/ApprovalMedTrx_PostResponse" message="tns:jsonserv_ApprovalMedTrx_Post_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSubordinate">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/GetSubordinate" message="tns:jsonserv_GetSubordinate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/GetSubordinateResponse" message="tns:jsonserv_GetSubordinate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllSubordinate">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/GetAllSubordinate" message="tns:jsonserv_GetAllSubordinate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/GetAllSubordinateResponse" message="tns:jsonserv_GetAllSubordinate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListTrxCICOPerNRP">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/GetListTrxCICOPerNRP" message="tns:jsonserv_GetListTrxCICOPerNRP_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/GetListTrxCICOPerNRPResponse" message="tns:jsonserv_GetListTrxCICOPerNRP_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListTrxOVT">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/GetListTrxOVT" message="tns:jsonserv_GetListTrxOVT_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/GetListTrxOVTResponse" message="tns:jsonserv_GetListTrxOVT_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ApprovalOVT">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/ApprovalOVT" message="tns:jsonserv_ApprovalOVT_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/ApprovalOVTResponse" message="tns:jsonserv_ApprovalOVT_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CekApprover">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/CekApprover" message="tns:jsonserv_CekApprover_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/CekApproverResponse" message="tns:jsonserv_CekApprover_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="cTicketHD">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/cTicketHD" message="tns:jsonserv_cTicketHD_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/cTicketHDResponse" message="tns:jsonserv_cTicketHD_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="cTicketHD2">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/cTicketHD2" message="tns:jsonserv_cTicketHD2_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/cTicketHD2Response" message="tns:jsonserv_cTicketHD2_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RequestOvertime">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/RequestOvertime" message="tns:jsonserv_RequestOvertime_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/RequestOvertimeResponse" message="tns:jsonserv_RequestOvertime_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListOvertimeByNRP">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/ListOvertimeByNRP" message="tns:jsonserv_ListOvertimeByNRP_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/ListOvertimeByNRPResponse" message="tns:jsonserv_ListOvertimeByNRP_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DelReqOvt">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/DelReqOvt" message="tns:jsonserv_DelReqOvt_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/DelReqOvtResponse" message="tns:jsonserv_DelReqOvt_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Submit2Approval">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/Submit2Approval" message="tns:jsonserv_Submit2Approval_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/Submit2ApprovalResponse" message="tns:jsonserv_Submit2Approval_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="validDateforCICO">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/validDateforCICO" message="tns:jsonserv_validDateforCICO_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/validDateforCICOResponse" message="tns:jsonserv_validDateforCICO_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getDataOvt1">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/getDataOvt1" message="tns:jsonserv_getDataOvt1_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/getDataOvt1Response" message="tns:jsonserv_getDataOvt1_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EditOVT">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/EditOVT" message="tns:jsonserv_EditOVT_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/EditOVTResponse" message="tns:jsonserv_EditOVT_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConfigDeasy">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/ConfigDeasy" message="tns:jsonserv_ConfigDeasy_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/ConfigDeasyResponse" message="tns:jsonserv_ConfigDeasy_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ApproveAttendance">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/ApproveAttendance" message="tns:jsonserv_ApproveAttendance_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/ApproveAttendanceResponse" message="tns:jsonserv_ApproveAttendance_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLastActCICO">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/GetLastActCICO" message="tns:jsonserv_GetLastActCICO_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/GetLastActCICOResponse" message="tns:jsonserv_GetLastActCICO_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="subCicofg">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/subCicofg" message="tns:jsonserv_subCicofg_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/subCicofgResponse" message="tns:jsonserv_subCicofg_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="fgValid">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/fgValid" message="tns:jsonserv_fgValid_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/fgValidResponse" message="tns:jsonserv_fgValid_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="subCicoWFH">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/subCicoWFH" message="tns:jsonserv_subCicoWFH_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/subCicoWFHResponse" message="tns:jsonserv_subCicoWFH_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="subCicoWFHOver">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/subCicoWFHOver" message="tns:jsonserv_subCicoWFHOver_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/subCicoWFHOverResponse" message="tns:jsonserv_subCicoWFHOver_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLastActCICOWFH">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/GetLastActCICOWFH" message="tns:jsonserv_GetLastActCICOWFH_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/GetLastActCICOWFHResponse" message="tns:jsonserv_GetLastActCICOWFH_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="cekCicoWFH">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/cekCicoWFH" message="tns:jsonserv_cekCicoWFH_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/cekCicoWFHResponse" message="tns:jsonserv_cekCicoWFH_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="cekCicoWFH2">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/cekCicoWFH2" message="tns:jsonserv_cekCicoWFH2_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/cekCicoWFH2Response" message="tns:jsonserv_cekCicoWFH2_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="cekCicoWFH3">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/cekCicoWFH3" message="tns:jsonserv_cekCicoWFH3_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/cekCicoWFH3Response" message="tns:jsonserv_cekCicoWFH3_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="subReqCicoWFH">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/subReqCicoWFH" message="tns:jsonserv_subReqCicoWFH_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/subReqCicoWFHResponse" message="tns:jsonserv_subReqCicoWFH_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListTrxCICOWFH">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/GetListTrxCICOWFH" message="tns:jsonserv_GetListTrxCICOWFH_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/GetListTrxCICOWFHResponse" message="tns:jsonserv_GetListTrxCICOWFH_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SubCicoListApprovalWFH">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/SubCicoListApprovalWFH" message="tns:jsonserv_SubCicoListApprovalWFH_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/SubCicoListApprovalWFHResponse" message="tns:jsonserv_SubCicoListApprovalWFH_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListTrxCICOWFH_NRPDate">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/GetListTrxCICOWFH_NRPDate" message="tns:jsonserv_GetListTrxCICOWFH_NRPDate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/GetListTrxCICOWFH_NRPDateResponse" message="tns:jsonserv_GetListTrxCICOWFH_NRPDate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DelCICOWFH">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/DelCICOWFH" message="tns:jsonserv_DelCICOWFH_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/DelCICOWFHResponse" message="tns:jsonserv_DelCICOWFH_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckEmployeeLocation1">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/CheckEmployeeLocation1" message="tns:jsonserv_CheckEmployeeLocation1_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/CheckEmployeeLocation1Response" message="tns:jsonserv_CheckEmployeeLocation1_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="cTicketPOST">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/cTicketPOST" message="tns:jsonserv_cTicketPOST_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/cTicketPOSTResponse" message="tns:jsonserv_cTicketPOST_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReportAbsensiWFHAll">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/GetReportAbsensiWFHAll" message="tns:jsonserv_GetReportAbsensiWFHAll_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/GetReportAbsensiWFHAllResponse" message="tns:jsonserv_GetReportAbsensiWFHAll_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReportAbsensiWFHClaimInternet">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/GetReportAbsensiWFHClaimInternet" message="tns:jsonserv_GetReportAbsensiWFHClaimInternet_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/GetReportAbsensiWFHClaimInternetResponse" message="tns:jsonserv_GetReportAbsensiWFHClaimInternet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReportAbsensiWFOClaimOT">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/GetReportAbsensiWFOClaimOT" message="tns:jsonserv_GetReportAbsensiWFOClaimOT_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/GetReportAbsensiWFOClaimOTResponse" message="tns:jsonserv_GetReportAbsensiWFOClaimOT_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CekWFHClaimInternet">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/CekWFHClaimInternet" message="tns:jsonserv_CekWFHClaimInternet_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/CekWFHClaimInternetResponse" message="tns:jsonserv_CekWFHClaimInternet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CekClaimOT">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/CekClaimOT" message="tns:jsonserv_CekClaimOT_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/CekClaimOTResponse" message="tns:jsonserv_CekClaimOT_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SubmitWFHClaimInternet">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/SubmitWFHClaimInternet" message="tns:jsonserv_SubmitWFHClaimInternet_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/SubmitWFHClaimInternetResponse" message="tns:jsonserv_SubmitWFHClaimInternet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ApproveWFHClaimInternet">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/ApproveWFHClaimInternet" message="tns:jsonserv_ApproveWFHClaimInternet_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/ApproveWFHClaimInternetResponse" message="tns:jsonserv_ApproveWFHClaimInternet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListTrxClaimInternet">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/GetListTrxClaimInternet" message="tns:jsonserv_GetListTrxClaimInternet_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/GetListTrxClaimInternetResponse" message="tns:jsonserv_GetListTrxClaimInternet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EditWFHClaimInternet">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/EditWFHClaimInternet" message="tns:jsonserv_EditWFHClaimInternet_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/EditWFHClaimInternetResponse" message="tns:jsonserv_EditWFHClaimInternet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDataTrxClaimInternet">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/GetDataTrxClaimInternet" message="tns:jsonserv_GetDataTrxClaimInternet_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/GetDataTrxClaimInternetResponse" message="tns:jsonserv_GetDataTrxClaimInternet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReportAbsv2">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/GetReportAbsv2" message="tns:jsonserv_GetReportAbsv2_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/GetReportAbsv2Response" message="tns:jsonserv_GetReportAbsv2_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkSchedule">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/GetWorkSchedule" message="tns:jsonserv_GetWorkSchedule_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/GetWorkScheduleResponse" message="tns:jsonserv_GetWorkSchedule_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkSchedulePerDate1">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/GetWorkSchedulePerDate1" message="tns:jsonserv_GetWorkSchedulePerDate1_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/GetWorkSchedulePerDate1Response" message="tns:jsonserv_GetWorkSchedulePerDate1_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertWFHSchedule">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/InsertWFHSchedule" message="tns:jsonserv_InsertWFHSchedule_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/InsertWFHScheduleResponse" message="tns:jsonserv_InsertWFHSchedule_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteWFHSchedule">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/DeleteWFHSchedule" message="tns:jsonserv_DeleteWFHSchedule_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/DeleteWFHScheduleResponse" message="tns:jsonserv_DeleteWFHSchedule_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkSchedule_Date">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/GetWorkSchedule_Date" message="tns:jsonserv_GetWorkSchedule_Date_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/GetWorkSchedule_DateResponse" message="tns:jsonserv_GetWorkSchedule_Date_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="MailChangeWFHSchedule">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/MailChangeWFHSchedule" message="tns:jsonserv_MailChangeWFHSchedule_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/MailChangeWFHScheduleResponse" message="tns:jsonserv_MailChangeWFHSchedule_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListFamilyMemberByNRP">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/GetListFamilyMemberByNRP" message="tns:jsonserv_GetListFamilyMemberByNRP_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/GetListFamilyMemberByNRPResponse" message="tns:jsonserv_GetListFamilyMemberByNRP_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFamilyMemberData">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/GetFamilyMemberData" message="tns:jsonserv_GetFamilyMemberData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/GetFamilyMemberDataResponse" message="tns:jsonserv_GetFamilyMemberData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateFamilyMemberData">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/UpdateFamilyMemberData" message="tns:jsonserv_UpdateFamilyMemberData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/UpdateFamilyMemberDataResponse" message="tns:jsonserv_UpdateFamilyMemberData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddFamilyMemberData">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/AddFamilyMemberData" message="tns:jsonserv_AddFamilyMemberData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/AddFamilyMemberDataResponse" message="tns:jsonserv_AddFamilyMemberData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeAddressData">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/GetEmployeeAddressData" message="tns:jsonserv_GetEmployeeAddressData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/GetEmployeeAddressDataResponse" message="tns:jsonserv_GetEmployeeAddressData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFamilyAddressData">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/GetFamilyAddressData" message="tns:jsonserv_GetFamilyAddressData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/GetFamilyAddressDataResponse" message="tns:jsonserv_GetFamilyAddressData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateEmpAddressData">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/UpdateEmpAddressData" message="tns:jsonserv_UpdateEmpAddressData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/UpdateEmpAddressDataResponse" message="tns:jsonserv_UpdateEmpAddressData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateFamAddressData">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/UpdateFamAddressData" message="tns:jsonserv_UpdateFamAddressData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/UpdateFamAddressDataResponse" message="tns:jsonserv_UpdateFamAddressData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteFamilyData">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/DeleteFamilyData" message="tns:jsonserv_DeleteFamilyData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/DeleteFamilyDataResponse" message="tns:jsonserv_DeleteFamilyData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertTrxOvertime">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/InsertTrxOvertime" message="tns:jsonserv_InsertTrxOvertime_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/InsertTrxOvertimeResponse" message="tns:jsonserv_InsertTrxOvertime_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListTrxMedByNRP">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/GetListTrxMedByNRP" message="tns:jsonserv_GetListTrxMedByNRP_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/GetListTrxMedByNRPResponse" message="tns:jsonserv_GetListTrxMedByNRP_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListPatient">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/GetListPatient" message="tns:jsonserv_GetListPatient_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/GetListPatientResponse" message="tns:jsonserv_GetListPatient_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="saveTrxMed">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/saveTrxMed" message="tns:jsonserv_saveTrxMed_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/saveTrxMedResponse" message="tns:jsonserv_saveTrxMed_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListKabKotaKerja">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/GetListKabKotaKerja" message="tns:jsonserv_GetListKabKotaKerja_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/GetListKabKotaKerjaResponse" message="tns:jsonserv_GetListKabKotaKerja_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetHPAuth64">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/GetHPAuth64" message="tns:jsonserv_GetHPAuth64_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/GetHPAuth64Response" message="tns:jsonserv_GetHPAuth64_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetHCUserID">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/GetHCUserID" message="tns:jsonserv_GetHCUserID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/GetHCUserIDResponse" message="tns:jsonserv_GetHCUserID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetHCHP">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/GetHCHP" message="tns:jsonserv_GetHCHP_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/GetHCHPResponse" message="tns:jsonserv_GetHCHP_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetHCPreStatus">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/GetHCPreStatus" message="tns:jsonserv_GetHCPreStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/GetHCPreStatusResponse" message="tns:jsonserv_GetHCPreStatus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetHCUserID_ByProfileID">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/GetHCUserID_ByProfileID" message="tns:jsonserv_GetHCUserID_ByProfileID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/GetHCUserID_ByProfileIDResponse" message="tns:jsonserv_GetHCUserID_ByProfileID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetHCHP_ByProfileID">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/GetHCHP_ByProfileID" message="tns:jsonserv_GetHCHP_ByProfileID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/GetHCHP_ByProfileIDResponse" message="tns:jsonserv_GetHCHP_ByProfileID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="saveHCPrelim">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/saveHCPrelim" message="tns:jsonserv_saveHCPrelim_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/saveHCPrelimResponse" message="tns:jsonserv_saveHCPrelim_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="saveHCDaily">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/saveHCDaily" message="tns:jsonserv_saveHCDaily_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/saveHCDailyResponse" message="tns:jsonserv_saveHCDaily_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetActEmployee">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/GetActEmployee" message="tns:jsonserv_GetActEmployee_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/GetActEmployeeResponse" message="tns:jsonserv_GetActEmployee_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="HCListUID">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/HCListUID" message="tns:jsonserv_HCListUID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/HCListUIDResponse" message="tns:jsonserv_HCListUID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="HCSaveUID">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/HCSaveUID" message="tns:jsonserv_HCSaveUID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/HCSaveUIDResponse" message="tns:jsonserv_HCSaveUID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="HCSaveStatus_PID">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/HCSaveStatus_PID" message="tns:jsonserv_HCSaveStatus_PID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/HCSaveStatus_PIDResponse" message="tns:jsonserv_HCSaveStatus_PID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="HCListHP">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/HCListHP" message="tns:jsonserv_HCListHP_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/HCListHPResponse" message="tns:jsonserv_HCListHP_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="HCSaveHP">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/HCSaveHP" message="tns:jsonserv_HCSaveHP_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/HCSaveHPResponse" message="tns:jsonserv_HCSaveHP_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getabstype">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/getabstype" message="tns:jsonserv_getabstype_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/getabstypeResponse" message="tns:jsonserv_getabstype_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getListApproval_ByUsername">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/getListApproval_ByUsername" message="tns:jsonserv_getListApproval_ByUsername_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/getListApproval_ByUsernameResponse" message="tns:jsonserv_getListApproval_ByUsername_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getSisaMed">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/getSisaMed" message="tns:jsonserv_getSisaMed_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/getSisaMedResponse" message="tns:jsonserv_getSisaMed_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getPersonelAreaCode">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/getPersonelAreaCode" message="tns:jsonserv_getPersonelAreaCode_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/getPersonelAreaCodeResponse" message="tns:jsonserv_getPersonelAreaCode_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getSubPersonelAreaCode">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/getSubPersonelAreaCode" message="tns:jsonserv_getSubPersonelAreaCode_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/getSubPersonelAreaCodeResponse" message="tns:jsonserv_getSubPersonelAreaCode_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="postLogPKB">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/postLogPKB" message="tns:jsonserv_postLogPKB_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/postLogPKBResponse" message="tns:jsonserv_postLogPKB_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getListClaimKm1">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/getListClaimKm1" message="tns:jsonserv_getListClaimKm1_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/getListClaimKm1Response" message="tns:jsonserv_getListClaimKm1_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getClaimKmDetail1">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/getClaimKmDetail1" message="tns:jsonserv_getClaimKmDetail1_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/getClaimKmDetail1Response" message="tns:jsonserv_getClaimKmDetail1_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="deClaimKm1">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/deClaimKm1" message="tns:jsonserv_deClaimKm1_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/deClaimKm1Response" message="tns:jsonserv_deClaimKm1_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getListItemClaimKM1">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/getListItemClaimKM1" message="tns:jsonserv_getListItemClaimKM1_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/getListItemClaimKM1Response" message="tns:jsonserv_getListItemClaimKM1_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getListClaimantName1">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/getListClaimantName1" message="tns:jsonserv_getListClaimantName1_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/getListClaimantName1Response" message="tns:jsonserv_getListClaimantName1_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getLastItemClaimKM">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/getLastItemClaimKM" message="tns:jsonserv_getLastItemClaimKM_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/getLastItemClaimKMResponse" message="tns:jsonserv_getLastItemClaimKM_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="addItemClaimKM1">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/addItemClaimKM1" message="tns:jsonserv_addItemClaimKM1_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/addItemClaimKM1Response" message="tns:jsonserv_addItemClaimKM1_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getClaimLimitKM1">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/getClaimLimitKM1" message="tns:jsonserv_getClaimLimitKM1_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/getClaimLimitKM1Response" message="tns:jsonserv_getClaimLimitKM1_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="submitClaimKM1">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/submitClaimKM1" message="tns:jsonserv_submitClaimKM1_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/submitClaimKM1Response" message="tns:jsonserv_submitClaimKM1_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getClaimKMElig1">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/getClaimKMElig1" message="tns:jsonserv_getClaimKMElig1_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/getClaimKMElig1Response" message="tns:jsonserv_getClaimKMElig1_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="dbrd_empprofile1">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/dbrd_empprofile1" message="tns:jsonserv_dbrd_empprofile1_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/dbrd_empprofile1Response" message="tns:jsonserv_dbrd_empprofile1_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="dbrd_empaddress1">
+      <wsdl:input wsaw:Action="http://tempuri.org/jsonserv/dbrd_empaddress1" message="tns:jsonserv_dbrd_empaddress1_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/jsonserv/dbrd_empaddress1Response" message="tns:jsonserv_dbrd_empaddress1_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="soapserv">
+    <wsdl:operation name="authUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/soapserv/authUser" message="tns:soapserv_authUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/soapserv/authUserResponse" message="tns:soapserv_authUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="authUser64">
+      <wsdl:input wsaw:Action="http://tempuri.org/soapserv/authUser64" message="tns:soapserv_authUser64_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/soapserv/authUser64Response" message="tns:soapserv_authUser64_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="cekAttendance1">
+      <wsdl:input wsaw:Action="http://tempuri.org/soapserv/cekAttendance1" message="tns:soapserv_cekAttendance1_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/soapserv/cekAttendance1Response" message="tns:soapserv_cekAttendance1_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="subAttendance1">
+      <wsdl:input wsaw:Action="http://tempuri.org/soapserv/subAttendance1" message="tns:soapserv_subAttendance1_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/soapserv/subAttendance1Response" message="tns:soapserv_subAttendance1_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="cekCico1">
+      <wsdl:input wsaw:Action="http://tempuri.org/soapserv/cekCico1" message="tns:soapserv_cekCico1_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/soapserv/cekCico1Response" message="tns:soapserv_cekCico1_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="cekCico2">
+      <wsdl:input wsaw:Action="http://tempuri.org/soapserv/cekCico2" message="tns:soapserv_cekCico2_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/soapserv/cekCico2Response" message="tns:soapserv_cekCico2_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="subCico1">
+      <wsdl:input wsaw:Action="http://tempuri.org/soapserv/subCico1" message="tns:soapserv_subCico1_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/soapserv/subCico1Response" message="tns:soapserv_subCico1_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ApprovalMedTrx1">
+      <wsdl:input wsaw:Action="http://tempuri.org/soapserv/ApprovalMedTrx1" message="tns:soapserv_ApprovalMedTrx1_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/soapserv/ApprovalMedTrx1Response" message="tns:soapserv_ApprovalMedTrx1_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getEmpDP1">
+      <wsdl:input wsaw:Action="http://tempuri.org/soapserv/getEmpDP1" message="tns:soapserv_getEmpDP1_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/soapserv/getEmpDP1Response" message="tns:soapserv_getEmpDP1_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListTrxMed1">
+      <wsdl:input wsaw:Action="http://tempuri.org/soapserv/GetListTrxMed1" message="tns:soapserv_GetListTrxMed1_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/soapserv/GetListTrxMed1Response" message="tns:soapserv_GetListTrxMed1_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateTicketHD">
+      <wsdl:input wsaw:Action="http://tempuri.org/soapserv/CreateTicketHD" message="tns:soapserv_CreateTicketHD_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/soapserv/CreateTicketHDResponse" message="tns:soapserv_CreateTicketHD_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="submit2approval1">
+      <wsdl:input wsaw:Action="http://tempuri.org/soapserv/submit2approval1" message="tns:soapserv_submit2approval1_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/soapserv/submit2approval1Response" message="tns:soapserv_submit2approval1_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpProfile1">
+      <wsdl:input wsaw:Action="http://tempuri.org/soapserv/GetEmpProfile1" message="tns:soapserv_GetEmpProfile1_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/soapserv/GetEmpProfile1Response" message="tns:soapserv_GetEmpProfile1_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="validDateCICO1">
+      <wsdl:input wsaw:Action="http://tempuri.org/soapserv/validDateCICO1" message="tns:soapserv_validDateCICO1_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/soapserv/validDateCICO1Response" message="tns:soapserv_validDateCICO1_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="cekOnleave1">
+      <wsdl:input wsaw:Action="http://tempuri.org/soapserv/cekOnleave1" message="tns:soapserv_cekOnleave1_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/soapserv/cekOnleave1Response" message="tns:soapserv_cekOnleave1_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getDateServ1">
+      <wsdl:input wsaw:Action="http://tempuri.org/soapserv/getDateServ1" message="tns:soapserv_getDateServ1_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/soapserv/getDateServ1Response" message="tns:soapserv_getDateServ1_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="subCicofg1">
+      <wsdl:input wsaw:Action="http://tempuri.org/soapserv/subCicofg1" message="tns:soapserv_subCicofg1_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/soapserv/subCicofg1Response" message="tns:soapserv_subCicofg1_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="validFG">
+      <wsdl:input wsaw:Action="http://tempuri.org/soapserv/validFG" message="tns:soapserv_validFG_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/soapserv/validFGResponse" message="tns:soapserv_validFG_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLastActCICOWFH1">
+      <wsdl:input wsaw:Action="http://tempuri.org/soapserv/GetLastActCICOWFH1" message="tns:soapserv_GetLastActCICOWFH1_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/soapserv/GetLastActCICOWFH1Response" message="tns:soapserv_GetLastActCICOWFH1_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckEmployeeLocationSOAP1">
+      <wsdl:input wsaw:Action="http://tempuri.org/soapserv/CheckEmployeeLocationSOAP1" message="tns:soapserv_CheckEmployeeLocationSOAP1_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/soapserv/CheckEmployeeLocationSOAP1Response" message="tns:soapserv_CheckEmployeeLocationSOAP1_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="cekCicoWFH1">
+      <wsdl:input wsaw:Action="http://tempuri.org/soapserv/cekCicoWFH1" message="tns:soapserv_cekCicoWFH1_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/soapserv/cekCicoWFH1Response" message="tns:soapserv_cekCicoWFH1_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SOAPEP" type="tns:soapserv">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="authUser">
+      <soap:operation soapAction="http://tempuri.org/soapserv/authUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="authUser64">
+      <soap:operation soapAction="http://tempuri.org/soapserv/authUser64" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cekAttendance1">
+      <soap:operation soapAction="http://tempuri.org/soapserv/cekAttendance1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="subAttendance1">
+      <soap:operation soapAction="http://tempuri.org/soapserv/subAttendance1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cekCico1">
+      <soap:operation soapAction="http://tempuri.org/soapserv/cekCico1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cekCico2">
+      <soap:operation soapAction="http://tempuri.org/soapserv/cekCico2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="subCico1">
+      <soap:operation soapAction="http://tempuri.org/soapserv/subCico1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ApprovalMedTrx1">
+      <soap:operation soapAction="http://tempuri.org/soapserv/ApprovalMedTrx1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getEmpDP1">
+      <soap:operation soapAction="http://tempuri.org/soapserv/getEmpDP1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListTrxMed1">
+      <soap:operation soapAction="http://tempuri.org/soapserv/GetListTrxMed1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateTicketHD">
+      <soap:operation soapAction="http://tempuri.org/soapserv/CreateTicketHD" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="submit2approval1">
+      <soap:operation soapAction="http://tempuri.org/soapserv/submit2approval1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpProfile1">
+      <soap:operation soapAction="http://tempuri.org/soapserv/GetEmpProfile1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="validDateCICO1">
+      <soap:operation soapAction="http://tempuri.org/soapserv/validDateCICO1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cekOnleave1">
+      <soap:operation soapAction="http://tempuri.org/soapserv/cekOnleave1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDateServ1">
+      <soap:operation soapAction="http://tempuri.org/soapserv/getDateServ1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="subCicofg1">
+      <soap:operation soapAction="http://tempuri.org/soapserv/subCicofg1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="validFG">
+      <soap:operation soapAction="http://tempuri.org/soapserv/validFG" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLastActCICOWFH1">
+      <soap:operation soapAction="http://tempuri.org/soapserv/GetLastActCICOWFH1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckEmployeeLocationSOAP1">
+      <soap:operation soapAction="http://tempuri.org/soapserv/CheckEmployeeLocationSOAP1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cekCicoWFH1">
+      <soap:operation soapAction="http://tempuri.org/soapserv/cekCicoWFH1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="SOAPEP" binding="tns:SOAPEP">
+      <soap:address location="http://sera18018/androidws/jsonservice.svc/soap" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
